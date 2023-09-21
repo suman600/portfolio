@@ -1,0 +1,25 @@
+@import "../variables";
+
+.nav-tab{
+  position: relative;
+  padding:  $nav-tab-padding-y $nav-tab-padding-x;
+  font-size: $nav-tab-font-size;
+  font-weight: $nav-tab-font-weight;
+  color: $nav-tab-color;
+  border-right: 1px solid $nav-tab-border-color;
+  cursor: pointer;
+  &:after{
+    position: absolute;
+    height: $nav-tab-hover-active-border-height;
+    background: $nav-tab-link-hover-active-border-color;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:hover, &:active{
+    color: $nav-tab-hover-active-color;
+    &:after{
+      content: "";
+    }
+  }
+}

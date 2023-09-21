@@ -1,0 +1,12 @@
+@use "sass:map";
+@import "../variables";
+@import "../mixing/btn";
+
+.btn{
+  @include button-style();
+}
+@each $name, $btn in $btn-theme {
+  .btn-#{$name}{
+    @include button-variant($name);
+  }
+}

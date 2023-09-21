@@ -1,1 +1,22 @@
-<h1>dfasdf</h1>
+<header>
+  <div class="tab-group">
+    <span class="nav-tab">micheal-weaver</span>
+    <ng-container *ngFor="let tab of tabs">
+      <a [href]="tab.url" class="nav-tab" tabindex="-1">{{tab.name}}</a>
+    </ng-container>
+  </div>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <div class="link-group">
+    <span class="nav-links">find me in:</span>
+    <ng-container *ngFor="let link of links">
+      <a class="nav-links" [href]="link.href" tabindex="-1">
+        <img  [src]="link.url" [alt]="link.name">
+      </a>
+    </ng-container>
+  </div>
+</footer>
+

@@ -1,0 +1,176 @@
+
+
+// color system
+$primary: #01080e !default;
+$secondary: #607b96 !default;
+$accent: #fea55f !default;
+
+$white: #ffffff !default;
+$gray-one: #010C15 !default;
+$gray-two: #1e2d3d !default;
+$gray-three: #011627 !default;
+$black: #000000 !default;
+$cyan: #43d9ad !default;
+$indigo: #4d5bce !default;
+$salmon: #e99287 !default;
+$purple: #c98bdf !default;
+$transparent: transparent;
+
+
+
+// spacer
+$spacer: 1rem !default;
+$spacers15: $spacer * .5 !default;
+$spacers2: $spacer * 2 !default;
+$spacers25: $spacer *2.5 !default;
+$spacers3: $spacer * 3 !default;
+$spacers35: $spacer * 3.5 !default;
+
+
+
+
+// Grid columns and container
+$container-max-widths: 1800px !default;
+$grid-columns: 3 !default;
+$grid-gutter-width: $spacers15 !default;
+$grid-row-columns: 3 !default;
+$container-padding-x: $grid-gutter-width !default;
+
+// border
+$border-width: 1px !default;
+$border-widths: 1 !default;
+$border-style: solid !default;
+$border-color: $secondary !default;
+$border-color-translucent: rgba($secondary, .175) !default;
+$border-radius: .5em !default;
+
+// font famaly
+$font-family-sans-serif:
+  'Fira Code',
+  monospace,
+  system-ui,
+  -apple-system,
+  Roboto,
+  Arial,
+  sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+
+// Typo font size
+$font-size-base: 1rem !default;
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// font weight
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-base: $font-weight-normal !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+// line heioght
+$line-height-base: 1.5 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 2 !default;
+
+
+// heading
+$headings-margin-bottom: $spacer * .5 !default;
+$headings-font-family: null !default;
+$headings-font-style: null !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: null !default;
+
+// hr
+$hr-margin-y: $spacer !default;
+$hr-color: inherit !default;
+$hr-border-color: null !default;
+$hr-border-width: $border-width !default;
+$hr-opacity: .25 !default;
+
+// Button
+$btn-padding-y: .375rem !default;
+$btn-padding-x: .75rem !default;
+$btn-font-family: null !default;
+$btn-font-size: $font-size-base !default;
+$btn-line-height: $line-height-base !default;
+$btn-white-space: null !default;
+$btn-outline: null !default;
+$btn-border-width: $border-width !default;
+$btn-font-weight: $font-weight-normal !default;
+$btn-box-shadow: null !default;
+
+
+// input
+$input-padding-y: .375rem !default;
+$input-padding-x: .75rem !default;
+$input-font-family: null !default;
+$input-font-size: $font-size-base !default;
+$input-font-weight: $font-weight-base !default;
+$input-line-height: $line-height-base !default;
+$input-bg: $gray-three !default;
+$input-color: $gray-two !default;
+$input-border-color: $gray-two !default; //$gray-400
+$input-border-radius: $border-radius !default;
+$input-focus-bg: $input-bg !default;
+$input-focus-border-color: $gray-three !default;
+$input-height-border: $border-width !default;
+
+
+
+// navs
+$nav-tab-padding-y: $spacer !default;
+$nav-tab-padding-x: $spacer * 2 !default;
+$nav-tab-font-size: $font-size-base !default;
+$nav-tab-font-weight: $font-weight-base !default;
+$nav-tab-color: $secondary !default;
+$nav-tab-border-color: $gray-two !default;
+$nav-tab-hover-active-color: $white !default;
+$nav-tab-hover-active-border-height: 2px!default;
+$nav-tab-link-hover-active-border-color: $accent!default;
+
+
+// links
+$nav-link-padding-y: $spacer*.625  !default;
+$nav-link-padding-x: $spacer * .875 !default;
+$nav-link-font-size: $font-size-base !default;
+$nav-link-font-weight: $font-weight-base !default;
+$nav-link-color: $secondary !default;
+$nav-link-border-color: $gray-two !default;
+$nav-link-hover-active-color: $white !default;
+
+
+// cards
+$card-spacer-y: $spacer * 2 !default;
+$card-spacer-x: $spacer * 2 !default;
+$card-color: $secondary !default;
+$card-border-width: 1 !default;
+$card-border-color: $gray-two !default;
+$card-border-radius: $border-radius * 2 !default;
+$card-bg: $gray-three !default;
+
+// code
+$code-font-size: $font-size-base !default;
+$code-color: $indigo !default;
+$code-variable-color: $purple !default;
+$code-value-color: $accent !default;
+$code-function-color: $purple !default;
+$code-bracket-color: $secondary !default;
+
+// btn colors
+
+
+$btn-theme: (
+  "primary": $primary,
+  "secondry": $secondary,
+  "accent": $accent,
+  "line-white": $transparent
+);
+
+$sidebar-width : 310px;

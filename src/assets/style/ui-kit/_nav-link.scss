@@ -1,0 +1,14 @@
+@import "../variables";
+
+.nav-links{
+  position: relative;
+  padding:  $nav-link-padding-y $nav-link-padding-x;
+  font-size: $nav-link-font-size;
+  font-weight: $nav-link-font-weight;
+  color: $nav-link-color;
+  border-right: 1px solid $nav-link-border-color;
+  cursor: pointer;
+    &:hover, &:active{
+      color: $nav-link-hover-active-color;
+    }
+}

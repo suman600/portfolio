@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/style/theme.scss';
+@import './assets/style/mixing/mixing';
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+app-root{
+  border-radius: $border-radius;
+  border: 1px solid $gray-two;
+  background: $gray-three;
+  @include flex-root;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+main{
+  flex: 1;
+}

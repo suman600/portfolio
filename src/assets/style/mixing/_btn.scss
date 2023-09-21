@@ -1,0 +1,31 @@
+@import "../variables";
+
+@mixin button-style {
+  display: inline-block;
+  border-radius: $border-radius;
+  padding: $btn-padding-x $btn-padding-y;
+  line-height: $btn-line-height;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+}
+@mixin button-variant($background){
+  @if $background == primary {
+    color: $white;
+  }
+  @else if $background == accent{
+    color: $primary;
+  }
+  @else if $background == secondry{
+    color: $white;
+    border: 1px solid $white;
+  }
+  @else if $background == line-white{
+    color: $white;
+  }
+}
+
+

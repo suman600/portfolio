@@ -1,0 +1,9 @@
+@mixin flex-root(){
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin nav-group(){
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,10 @@
+@mixin container(){
+  width: 100%;
+  max-width: $container-max-widths;
+  margin: 0 auto;
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+.container{
+  @include container();
+}
