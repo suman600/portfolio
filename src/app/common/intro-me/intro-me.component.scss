@@ -1,0 +1,22 @@
+@import "../../../assets/style/variables";
+
+:host {
+  width: max-content;
+}
+.intro-caption{
+  color: $white;
+  font-size: $intro-font-caption-size;
+}
+.intro-title{
+  color: $white;
+  font-size: $intro-font-title-size;
+  font-weight: $font-weight-normal;
+}
+.intro-code{
+  color: $indigo;
+  font-size: $intro-font-code-size;
+  margin-bottom: $spacer*6.5;
+}
+.text-comment{
+  margin-bottom: $spacer*.625;
+}

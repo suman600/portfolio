@@ -74,7 +74,7 @@ $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 
 // line heioght
-$line-height-base: 1.5 !default;
+$line-height-base: normal !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
@@ -95,7 +95,7 @@ $hr-border-width: $border-width !default;
 $hr-opacity: .25 !default;
 
 // Button
-$btn-padding-y: .375rem !default;
+$btn-padding-y: .625rem !default;
 $btn-padding-x: .75rem !default;
 $btn-font-family: null !default;
 $btn-font-size: $font-size-base !default;
@@ -125,7 +125,7 @@ $input-height-border: $border-width !default;
 
 
 // navs
-$nav-tab-padding-y: $spacer !default;
+$nav-tab-padding-y: $spacer * 1.125 !default;
 $nav-tab-padding-x: $spacer * 2 !default;
 $nav-tab-font-size: $font-size-base !default;
 $nav-tab-font-weight: $font-weight-base !default;
@@ -137,7 +137,7 @@ $nav-tab-link-hover-active-border-color: $accent!default;
 
 
 // links
-$nav-link-padding-y: $spacer*.625  !default;
+$nav-link-padding-y: $spacer*.75  !default;
 $nav-link-padding-x: $spacer * .875 !default;
 $nav-link-font-size: $font-size-base !default;
 $nav-link-font-weight: $font-weight-base !default;
@@ -170,7 +170,29 @@ $btn-theme: (
   "primary": $primary,
   "secondry": $secondary,
   "accent": $accent,
-  "line-white": $transparent
+  "line-white": $transparent,
+  "text": $transparent
 );
 
+$code-theme: (
+  "comment": $secondary,
+  "const": $indigo,
+  "variable": $cyan,
+  "value": $accent,
+  "assign": $white
+);
+
+
+
+// app section
 $sidebar-width : 310px;
+
+// hello section
+$hello-grid-gap: $spacer*7.5 !default;
+$intro-font-caption-size: $font-size-base * 1.125 !default;
+$intro-font-title-size: $font-size-base * 3.875 !default;
+$intro-font-code-size: $h2-font-size !default;
+$highlight-grid-gap: $spacer*1.5 !default;
+$highlight-background: linear-gradient(150deg, rgba(23, 85, 83, 0.70) 1.7%, rgba(67, 217, 173, 0.09) 81.82%);
+$highlight-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.30) inset;
+

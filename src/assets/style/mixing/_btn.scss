@@ -3,28 +3,38 @@
 @mixin button-style {
   display: inline-block;
   border-radius: $border-radius;
-  padding: $btn-padding-x $btn-padding-y;
+  padding: $btn-padding-y $btn-padding-x;
   line-height: $btn-line-height;
   font-size: $btn-font-size;
   font-weight: $btn-font-weight;
+  background: transparent;
+  border: 0;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   user-select: none;
+  outline: none;
 }
-@mixin button-variant($background){
-  @if $background == primary {
+@mixin button-variant($name){
+  @if $name == primary {
+    background: $primary;
     color: $white;
   }
-  @else if $background == accent{
+  @else if $name == accent{
+    background: $accent;
     color: $primary;
   }
-  @else if $background == secondry{
+  @else if $name == secondry{
+    background: $secondary;
+    color: $white;
+  }
+  @else if $name == line-white{
     color: $white;
     border: 1px solid $white;
   }
-  @else if $background == line-white{
-    color: $white;
+  @else if $name == text{
+    color: inherit;
+    padding: 0;
   }
 }
 

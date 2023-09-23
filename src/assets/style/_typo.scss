@@ -22,7 +22,8 @@
   @extend h6;
 }
 
-.lead {
-  font-size: $font-size-base*4;
-  font-weight: $font-weight-bold;
+@each $name, $code in $code-theme {
+  .text-#{$name}{
+    color: map-get($code-theme, $name);
+  }
 }
