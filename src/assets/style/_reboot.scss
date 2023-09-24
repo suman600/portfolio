@@ -22,6 +22,7 @@ html{
 body {
   margin: 0;
   padding: $spacer;
+  overflow: hidden;
 }
 ::selection{
   -webkit-user-select: none; /* Safari */

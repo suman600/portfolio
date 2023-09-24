@@ -1,34 +1,116 @@
 @import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
 :host{
-  border-radius: $border-radius;
-  border: 1px solid $gray-one;
-  background: $highlight-background;
-  box-shadow: $highlight-shadow;
-  backdrop-filter: blur(32px);
-  &:before, &:after{
-    content: "";
-    position: absolute;
-  }
-  &:before{
-    width: 454px;
-    height: 492px;
-    transform: rotate(-94deg);
-    background-image: url("../../../assets/img/heighlight-cyan.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: -50px;
-    top: -126px;
-  }
-}
-
-.highlights{
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 182px;
   grid-gap: $highlight-grid-gap;
-  padding: $spacer*2;
-  width: 510px;
-  height: 475px;
-  &__play{
+  border-radius: $border-radius;
+  border: 1px solid $gray-one;
+  background: $highlight-background;
+  width: $highlight-width;
+  height: $highlight-height;
+  padding: $highlight-padding-y $highlight-padding-x;
+  box-shadow: $highlight-shadow;
+  backdrop-filter: blur(32px);
+}
 
+.gradient-cyan{
+  background: url('../../../assets/img/heighlight-cyan.svg') no-repeat;
+  position: absolute;
+  width: $highlight-cyan-width;
+  height: $highlight-cyan-height;
+  top: -292px;
+  right: -110px;
+  z-index: $zindex-negative;
+}
+
+.gradient-indigo{
+  background: url('../../../assets/img/heighlight-indigo.svg') no-repeat;
+  position: absolute;
+  width: $highlight-indigo-width;
+  height: $highlight-indigo-height;
+  top: 120px;
+  left: 120px;
+  background-size: contain;
+  transform: rotate(-10deg);
+  z-index: $zindex-negative
+}
+
+.highlights-play{
+  position: relative;
+  border-radius: $border-radius;
+  background: rgba($gray-three, 0.84);
+  width: $highlight-play-width;
+  height: $highlight-play-height;
+  overflow: hidden;
+}
+.game-ribbon{
+  background: rgba($gray-three, 0.84);
+  color: $cyan;
+  font-size: $h4-font-size;
+  padding: $spacer * .625 $spacer * 2;
+}
+.play-start{
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  @include flex-root;
+  gap: $spacer;
+}
+
+.btn-accent{
+  width: max-content;
+  margin: 0 auto;
+}
+
+.bolt-icon{
+  position: absolute;
+  &.top-left{
+    top: 12px;
+    left: 12px;
   }
+  &.top-right{
+    top: 12px;
+    right: 12px;
+  }
+  &.down-left{
+    bottom: 12px;
+    left: 12px;
+  }
+  &.down-right{
+    bottom: 12px;
+    right: 12px;
+  }
+}
+.play-control{
+  color: $white;
+  border-radius: $border-radius;
+  background: rgba($play-control-board-bg, 0.19);
+  padding: $spacer $spacer * .75;
+  margin-bottom: 20px;
+}
+
+pre{
+  font-size: $font-size-base * .875;
+  color: $white;
+}
+.btn-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  :first-child{
+    grid-column: 1 span / 3;
+  }
+  :not(:first-child){
+    grid-row: 2;
+  }
+}
+.food-group{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: max-content;
+  gap: 6px;
 }

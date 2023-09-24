@@ -1,24 +1,36 @@
-<div class="highlights">
-  <div class="highlights__play">
-    <ng-container>
-      <div class="game-ribbon">GAME OVER!</div>
-      <button class="btn btn-text">play-again</button>
-    </ng-container>
-    <ng-container>
-      <div class="game-ribbon">WELL DONE!</div>
-      <button class="btn btn-text text-white">play-again</button>
-    </ng-container>
+<div class="highlights-play">
+  <div class="play-start" *ngIf="true">
     <button class="btn btn-accent">start-game</button>
   </div>
-  <div class="highlights__controls">
-    <div class="board">
-      // use keyboard<br>
-      // arrows to play
-      <button class="btn"><img src="./assets/img/key-top.svg" alt="key left"></button><br>
-      <button class="btn"><img src="./assets/img/key-left.svg" alt="key left"></button>
-      <button class="btn"><img src="./assets/img/key-bottom.svg" alt="key left"></button>
-      <button class="btn"><img src="./assets/img/key-right.svg" alt="key left"></button>
-    </div>
+  <div class="play-start" *ngIf="false">
+    <div class="game-ribbon">WELL DONE!</div>
+    <button class="btn btn-text text-white">play-again</button>
   </div>
 </div>
+<div class="highlights-control">
+  <div class="play-control">
+  <pre>
+// use keyboard
+// arrows to play
+    </pre>
+    <div class="btn-group">
+      <button class="btn btn-text"><img src="./assets/img/key-top.svg" alt="key left"></button>
+      <button class="btn btn-text"><img src="./assets/img/key-left.svg" alt="key left"></button>
+      <button class="btn btn-text"><img src="./assets/img/key-bottom.svg" alt="key left"></button>
+      <button class="btn btn-text"><img src="./assets/img/key-right.svg" alt="key left"></button>
+    </div>
+  </div>
+  <pre>// food left</pre>
+  <div class="food-group">
+    <ng-container *ngFor="let i of [0,1,2,3,4,5,6,7,8,9]">
+      <img src="./assets/img/food.svg" alt="fod">
+    </ng-container>
+  </div>
+</div>
+<div class="gradient-cyan"></div>
+<div class="gradient-indigo"></div>
+<span class="bolt-icon top-left"><img src="../../../assets/img/bolt-up-left.svg" alt="bolt-icon"></span>
+<span class="bolt-icon top-right"><img src="../../../assets/img/bolt-up-right.svg" alt="bolt-icon"></span>
+<span class="bolt-icon down-left"><img src="../../../assets/img/bolt-down-left.svg" alt="bolt-icon"></span>
+<span class="bolt-icon down-right"><img src="../../../assets/img/bolt-down-right.svg" alt="bolt-icon"></span>
 

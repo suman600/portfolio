@@ -1,11 +1,12 @@
 @import './assets/style/theme.scss';
-@import './assets/style/mixing/mixing';
+@import './assets/style/mixing/mixings';
 
 body{
   height: 100vh;
   width: 100vw;
 }
 app-root{
+  position: relative;
   border-radius: $border-radius;
   border: 1px solid $gray-two;
   background: $gray-three;

@@ -1,9 +1,8 @@
 @import "../../../assets/style/variables";
 :host{
   display: grid;
-  grid-template-columns: auto auto;
-  padding: $spacer*2 $sidebar-width;
+  grid-template-columns: max-content 1fr;
+  padding: $spacer $spacer $spacer $sidebar-width;
   align-items: center;
-  width: max-content;
   grid-gap: $hello-grid-gap;
 }
