@@ -3,8 +3,9 @@
     <div class="dropdown__link">projects</div>
   </div>
   <div class="filter-group">
-    <div class="custom-checkbox">
-        <input type="checkbox"><span>React</span>
-    </div>
+    <label class="custom-checkbox" *ngFor="let i of [0,1,2,3,4,5]">
+      <input type="checkbox">
+      <span></span>React
+    </label>
   </div>
 </div>
