@@ -1,0 +1,6 @@
+@import "../variables";
+.sidebar{
+  width: $sidebar-width;
+  border-right: 1px solid $gray-two;
+  height: 100%;
+}

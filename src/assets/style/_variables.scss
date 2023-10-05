@@ -199,16 +199,32 @@ $intro-font-title-size: $font-size-base * 3.875 !default;
 $intro-font-code-size: $h2-font-size !default;
 $highlight-grid-gap: $spacer*1.5 !default;
 
-$highlight-background: linear-gradient(150deg, rgba(23, 85, 83, 0.70) 1.7%, rgba(67, 217, 173, 0.09) 81.82%);
-$highlight-width: 510px;
-$highlight-height: 474px;
-$highlight-padding-y: $spacer*2.25;
-$highlight-padding-x: $spacer*2;
-$highlight-cyan-width: 864px;
-$highlight-cyan-height: 784px;
-$highlight-indigo-width: 668px;
-$highlight-indigo-height: 681px;
-$highlight-play-width: 238px;
-$highlight-play-height: 100%;
-$highlight-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.20) inset;
+$highlight-background: linear-gradient(150deg, rgba(23, 85, 83, 0.70) 1.7%, rgba(67, 217, 173, 0.09) 81.82%) !default;
+$highlight-width: 510px !default;
+$highlight-height: 474px !default;
+$highlight-padding-y: $spacer*2.25 !default;
+$highlight-padding-x: $spacer*2 !default;
+$highlight-cyan-width: 864px !default;
+$highlight-cyan-height: 784px !default;
+$highlight-indigo-width: 668px !default;
+$highlight-indigo-height: 681px !default;
+$highlight-play-width: 238px !default;
+$highlight-play-height: 100% !default;
+$highlight-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.20) inset !default;
+
+
+// dropdown
+
+$dropdown-color: $white !default;
+$dropdown-font-size: $font-size-base !default;
+$dropdown-font-weight: $font-weight-base !default;
+$dropdown-xy-padding: $spacer * .625 !default;
+$dropdown-lr-padding: $spacer * 2 !default;
+$dropdown-link-left-padding: $spacer * 1.25 !default;
+$dropdown-border-color: $gray-two !default;
+
+
+
+
+
 

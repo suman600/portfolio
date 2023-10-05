@@ -2,7 +2,7 @@
   <div class="tab-group">
     <span class="nav-tab">micheal-weaver</span>
     <ng-container *ngFor="let tab of tabs">
-      <a [href]="tab.url" class="nav-tab" tabindex="-1">{{tab.name}}</a>
+      <a [routerLink]="tab.url" class="nav-tab" tabindex="-1">{{tab.name}}</a>
     </ng-container>
   </div>
 </header>
