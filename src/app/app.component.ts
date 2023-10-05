@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
   title = 'portfolio';
   tabs:Tabs[] = [hello, about, project, contact];
   links: Links [] = [linkedIn,facebook,twitter,github];
+
   constructor() {
   }
 

@@ -1,0 +1,27 @@
+@import "../../../assets/style/variables";
+
+:host{
+  display: flex;
+}
+
+.layout-flex{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  &__header{
+    padding: 0 ;
+    border-bottom: 1px solid $gray-two;
+  }
+}
+.filter-tab{
+  color: $filter-tab-color;
+  font-size: $filter-tab-font-size;
+  font-weight: $filter-tab-font-weight;
+  padding: $filter-tab-padding $filter-tab-padding $filter-tab-padding $filter-tab-r-padding;
+  width: max-content;
+  border-right: 1px solid $filter-tab-border-color;
+  img{
+    margin-left: 48px;
+    cursor: pointer;
+  }
+}

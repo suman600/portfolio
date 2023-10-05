@@ -1,4 +1,4 @@
-import {Links, Tabs} from "../model/model";
+import {Links} from "../model/model";
 
 export const linkedIn:Links = {
   name: 'linkedin',

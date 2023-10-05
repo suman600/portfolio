@@ -219,10 +219,20 @@ $dropdown-color: $white !default;
 $dropdown-font-size: $font-size-base !default;
 $dropdown-font-weight: $font-weight-base !default;
 $dropdown-xy-padding: $spacer * .625 !default;
-$dropdown-lr-padding: $spacer * 2 !default;
+$dropdown-lr-padding: $spacer * 1.375 !default;
 $dropdown-link-left-padding: $spacer * 1.25 !default;
 $dropdown-border-color: $gray-two !default;
 
+
+
+// filter tab
+
+$filter-tab-color: $secondary !default;
+$filter-tab-font-size: $font-size-base !default;
+$filter-tab-font-weight: $font-weight-base !default;
+$filter-tab-padding: $spacer * 0.625 !default;
+$filter-tab-r-padding: $spacer * 1.375 !default;
+$filter-tab-border-color: $gray-two !default;
 
 
 

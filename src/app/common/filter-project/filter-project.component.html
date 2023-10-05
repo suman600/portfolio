@@ -1,11 +1,10 @@
-<div class="sidebar">
-  <div class="dropdown">
-    <div class="dropdown__link">projects</div>
-  </div>
-  <div class="filter-group">
-    <label class="custom-checkbox" *ngFor="let i of [0,1,2,3,4,5]">
-      <input type="checkbox">
-      <span></span>React
-    </label>
+<div class="dropdown">
+  <div class="dropdown__link">projects</div>
+</div>
+<div class="filter-group">
+  <div class="filter-group__list" *ngFor="let filter of filters">
+    <label class="custom-checkbox">
+      <input type="checkbox" [value]="filter.value"><span></span>
+    </label>{{filter.name}}
   </div>
 </div>
