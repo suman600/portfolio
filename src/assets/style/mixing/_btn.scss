@@ -19,14 +19,30 @@
   @if $name == primary {
     background: $primary;
     color: $white;
+    &:hover{
+      background: darken($primary, 4%);
+    }
   }
   @else if $name == accent{
     background: $accent;
     color: $primary;
+    &:hover{
+      background: darken($accent, 4%);
+    }
   }
   @else if $name == secondry{
     background: $secondary;
     color: $white;
+    &:hover{
+      background: darken($secondary, 4%);
+    }
+  }
+  @else if $name == dark{
+    background: $gray-two;
+    color: $white;
+    &:hover{
+      background: darken($gray-two, 4%);
+    }
   }
   @else if $name == line-white{
     color: $white;
@@ -35,6 +51,8 @@
   @else if $name == text{
     color: inherit;
     padding: 0;
+  } @else {
+    @error "Unknown name $name";
   }
 }
 

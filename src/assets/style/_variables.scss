@@ -17,7 +17,7 @@ $purple: #c98bdf !default;
 $transparent: transparent;
 
 // extra colors
-$play-control-board-bg: #011423;
+$play-control-board-bg: #011423 !default;
 
 
 // spacer
@@ -151,14 +151,15 @@ $nav-link-border-color: $gray-two !default;
 $nav-link-hover-active-color: $white !default;
 
 
-// cards
-$card-spacer-y: $spacer * 2 !default;
-$card-spacer-x: $spacer * 2 !default;
+// card
+$card-xy-padding: $spacer * 1.5 !default;
+$card-lr-padding: $spacer * 2 !default;
 $card-color: $secondary !default;
-$card-border-width: 1 !default;
+$card-font-color: $font-size-base * 1.125 !default;
+$card-border-width: 1px !default;
 $card-border-color: $gray-two !default;
 $card-border-radius: $border-radius * 2 !default;
-$card-bg: $gray-three !default;
+$card-bg-color: $gray-three !default;
 
 // code
 $code-font-size: $font-size-base !default;
@@ -175,6 +176,7 @@ $btn-theme: (
   "primary": $primary,
   "secondry": $secondary,
   "accent": $accent,
+  "dark": $gray-two,
   "line-white": $transparent,
   "text": $transparent
 );
