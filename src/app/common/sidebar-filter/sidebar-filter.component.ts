@@ -4,11 +4,11 @@ import {auth, sheet, theme, todo} from "../../links/filter";
 
 
 @Component({
-  selector: 'app-filter-project',
-  templateUrl: './filter-project.component.html',
-  styleUrls: ['./filter-project.component.scss']
+  selector: 'app-sidebar-filter',
+  templateUrl: './sidebar-filter.component.html',
+  styleUrls: ['./sidebar-filter.component.scss']
 })
-export class FilterProjectComponent implements OnInit {
+export class SidebarFilterComponent implements OnInit {
 
 
   filters:Filter[] = [todo, auth, sheet, theme];

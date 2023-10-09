@@ -113,21 +113,18 @@ $btn-box-shadow: null !default;
 
 
 // input
-$input-padding-y: .375rem !default;
-$input-padding-x: .75rem !default;
+$input-padding-y: $spacer * .75 !default;
+$input-padding-x: $spacer !default;
 $input-font-family: null !default;
 $input-font-size: $font-size-base !default;
 $input-font-weight: $font-weight-base !default;
-$input-line-height: $line-height-base !default;
-$input-bg: $gray-three !default;
+$input-bg: darken($gray-three, 1.5%) !default;
 $input-color: $gray-two !default;
 $input-border-color: $gray-two !default; //$gray-400
 $input-border-radius: $border-radius !default;
-$input-focus-bg: $input-bg !default;
-$input-focus-border-color: $gray-three !default;
-$input-height-border: $border-width !default;
-
-
+$input-border-width: $border-width !default;
+$input-focus-border-color: $secondary !default;
+$input-focus-shadow: 0 0 0 2px rgba(96, 123, 150, 0.30) !default;
 
 // navs
 $nav-tab-padding-y: $spacer * 1.125 !default;
@@ -235,6 +232,23 @@ $filter-tab-font-weight: $font-weight-base !default;
 $filter-tab-padding: $spacer * 0.625 !default;
 $filter-tab-r-padding: $spacer * 1.375 !default;
 $filter-tab-border-color: $gray-two !default;
+
+//  contact list
+
+$contact-list-size: $font-size-base !default;
+$contact-list-weight: $font-weight-base !default;;
+$contact-list-color: $secondary !default;
+$contact-list-color-active: $white !default;
+$contact-list-flex-gap: $spacer * .5 !default;
+
+// form-label
+
+$form-label-size: $font-size-base !default;
+$form-label-weight: $font-weight-base !default;
+$form-label-color: $secondary !default;
+
+
+
 
 
 

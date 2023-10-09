@@ -1,34 +1,27 @@
 @import "../../../assets/style/variables";
 
-:host{
+.page{
   display: flex;
-}
-.filter-tab{
-  color: $filter-tab-color;
-  font-size: $filter-tab-font-size;
-  font-weight: $filter-tab-font-weight;
-  padding: $filter-tab-padding $filter-tab-padding $filter-tab-padding $filter-tab-r-padding;
-  width: max-content;
-  border-right: 1px solid $filter-tab-border-color;
-  img{
-    margin-left: 48px;
-    cursor: pointer;
+  overflow: hidden;
+  &__sidebar{
+  }
+  &__content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 }
 
-.layout-flex{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  &__header{
-    padding: 0 ;
-    border-bottom: 1px solid $gray-two;
-  }
-  &__page{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 100px 100px;
-    grid-gap: 40px;
-  }
+app-file-tab{
+  display: block;
+  padding: 0 ;
+  border-bottom: 1px solid $gray-two;
+}
+section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 100px 100px;
+  grid-gap: 40px;
+  overflow: auto;
 }
 

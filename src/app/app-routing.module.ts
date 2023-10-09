@@ -12,11 +12,11 @@ const routes: Routes = [
   },
   {
     path: 'contact',
-    loadChildren: () => import('./routes/project/project.module').then(m => m.ProjectModule)
+    loadChildren: () => import('./routes/contact/contact.module').then(m => m.ContactModule)
   },
   {
     path: 'project',
-    loadChildren: () => import('./routes/contact/contact.module').then(m => m.ContactModule)
+    loadChildren: () => import('./routes/project/project.module').then(m => m.ProjectModule)
   },
   {
     path: '' || '**',

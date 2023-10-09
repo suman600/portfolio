@@ -1,0 +1,11 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+form{
+  @include flex-column();
+  padding: 100px 100px;
+}
+.btn{
+  width: max-content;
+}
+
