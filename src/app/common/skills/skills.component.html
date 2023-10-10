@@ -1,21 +1,13 @@
 <pre>// technical</pre>
 <section>
-  <div class="skill-badge" *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12]">HTML</div>
-</section>
-<pre>// technical</pre>
-<section>
-  <div class="skill-badge" *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12]">HTML</div>
+  <div class="skill-badge" *ngFor="let skill of skills">
+    <img [src]="skill.image" [alt]="skill.text" width="16px"> {{skill.text}}
+  </div>
 </section>
 <pre>// tools</pre>
 <section>
-  <div class="skill-badge" *ngFor="let i of [0,1,2,3,4,5]">HTML</div>
+  <div class="skill-badge" *ngFor="let tool of tools">
+    <img [src]="tool.image" [alt]="tool.text" width="16px">{{tool.text}}</div>
 </section>
-<pre>// Remote</pre>
-<section>
-  <div class="skill-badge" *ngFor="let i of [0,1,2,3]">HTML</div>
-</section>
-<pre>// Editor</pre>
-<section>
-  <div class="skill-badge" *ngFor="let i of [0,1,2,3]">HTML</div>
-</section>
+
 

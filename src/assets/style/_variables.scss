@@ -248,12 +248,16 @@ $form-label-color: $secondary !default;
 
 // skill badge
 
-$skill-badge-color: $white !default;
+$skill-badge-color: $secondary !default;
 $skill-badge-font-size: $font-size-base !default;
 $skill-badge-weight: $font-weight-base !default;
 $skill-badge-y-padding: $spacer * .85 !default;
 $skill-badge-x-padding: $spacer * 2 !default;
-$skill-badge-border-color: #1e2d3d !default;
+$skill-badge-border-color: $gray-two !default;
+$skill-badge-border-radius: $spacer *2 !default;
+$skill-badge-hover-color: $white !default;
+$skill-badge-hover-border-color: $white !default;
+$skill-badge-hover-bg-color: rgba($secondary, 10%) !default;
 
 
 

@@ -13,3 +13,7 @@ export interface Filter {
   name:string;
   value:string;
 }
+export interface Skill {
+  text: string;
+  image: string
+}
