@@ -6,6 +6,7 @@ import {FileTabExportModule} from "../../common/file-tab/file-tab-export.module"
 import {DropdownExportModule} from "../../common/dropdown/dropdown-export.module";
 import {SidebarContactComponent} from "../../common/sidebar-contact/sidebar-contact.component";
 import {FormContactComponent} from "../../common/form-contact/form-contact.component";
+import {CodeSnippedComponent} from "../../common/code-snipped/code-snipped.component";
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import {FormContactComponent} from "../../common/form-contact/form-contact.compo
   declarations: [
     ContactComponent,
     SidebarContactComponent,
-    FormContactComponent
+    FormContactComponent,
+    CodeSnippedComponent
   ]
 })
 export class ContactModule { }

@@ -3,9 +3,21 @@
 
 form{
   @include flex-column();
-  padding: 100px 100px;
+  padding: 140px 100px;
 }
 .btn{
   width: max-content;
 }
 
+.state-success{
+  padding: 2rem 2rem;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+h2{
+  color: $white;
+}

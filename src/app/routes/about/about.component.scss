@@ -1,0 +1,15 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+.host{
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 630px 1fr;
+  height: 100%;
+  overflow: hidden;
+}

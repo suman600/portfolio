@@ -1,31 +1,22 @@
 @import "../../../assets/style/variables";
 
-.page{
+:host{
   display: flex;
   height: 100%;
   overflow: hidden;
-  &__sidebar{
-  }
-  &__content{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
 }
-
-app-file-tab{
-  display: block;
-  padding: 0 ;
-  border-bottom: 1px solid $gray-two;
-}
-
 section{
   display: grid;
   grid-template-columns: 630px 1fr;
   height: 100%;
+  overflow: hidden;
 }
 app-form-contact{
   display: block;
-  border-right: 1px solid #1E2D3D;
+  border-right: 1px solid $gray-two;
+  height: 100%;
+}
+app-code-snipped{
+  display: block;
   height: 100%;
 }

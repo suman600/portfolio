@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AboutRoutingModule } from './about-routing.module';
 import { AboutComponent } from './about.component';
+import {DropdownExportModule} from "../../common/dropdown/dropdown-export.module";
+import {SidebarAboutComponent} from "../../common/sidebar-about/sidebar-about.component";
 
 @NgModule({
   imports: [
     CommonModule,
-    AboutRoutingModule
+    AboutRoutingModule,
+    DropdownExportModule
   ],
-  declarations: [AboutComponent]
+  declarations: [AboutComponent, SidebarAboutComponent]
 })
 export class AboutModule { }

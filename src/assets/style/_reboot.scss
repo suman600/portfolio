@@ -145,7 +145,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: $font-weight-base;
+  font-family: $font-family-base;
   font-size: $spacer;
 }
 
@@ -154,7 +154,6 @@ pre {
   margin-top: 0;
   margin-bottom: $spacer;
   overflow: auto;
-  font-size: $font-size-base;
   color: inherit;
 }
 
