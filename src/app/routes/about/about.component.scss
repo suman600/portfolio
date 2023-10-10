@@ -1,15 +1,15 @@
 @import "../../../assets/style/variables";
 @import "../../../assets/style/mixing/mixings";
 
-.host{
+:host{
   display: flex;
   height: 100%;
   overflow: hidden;
 }
 
 section{
-  display: grid;
-  grid-template-columns: 630px 1fr;
+  flex: 1;
   height: 100%;
-  overflow: hidden;
+  padding: 42px 3rem;
+  overflow: auto;
 }
