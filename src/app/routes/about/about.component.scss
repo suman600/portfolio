@@ -10,6 +10,13 @@
 section{
   flex: 1;
   height: 100%;
-  padding: 42px 3rem;
+  padding: $spacer * 2 $spacer * 3;
   overflow: auto;
+}
+
+app-about-me,
+app-work-exp,
+app-skills{
+  height: 100%;
+  display: block;
 }

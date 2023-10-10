@@ -6,6 +6,7 @@ import {DropdownExportModule} from "../../common/dropdown/dropdown-export.module
 import {SidebarAboutComponent} from "../../common/sidebar-about/sidebar-about.component";
 import {AboutMeComponent} from "../../common/about-me/about-me.component";
 import {WorkExpComponent} from "../../common/work-exp/work-exp.component";
+import {SkillsComponent} from "../../common/skills/skills.component";
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import {WorkExpComponent} from "../../common/work-exp/work-exp.component";
     AboutComponent,
     SidebarAboutComponent,
     AboutMeComponent,
-    WorkExpComponent]
+    WorkExpComponent,
+    SkillsComponent]
 })
 export class AboutModule { }

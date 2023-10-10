@@ -242,11 +242,18 @@ $contact-list-color-active: $white !default;
 $contact-list-flex-gap: $spacer * .5 !default;
 
 // form-label
-
 $form-label-size: $font-size-base !default;
 $form-label-weight: $font-weight-base !default;
 $form-label-color: $secondary !default;
 
+// skill badge
+
+$skill-badge-color: $white !default;
+$skill-badge-font-size: $font-size-base !default;
+$skill-badge-weight: $font-weight-base !default;
+$skill-badge-y-padding: $spacer * .85 !default;
+$skill-badge-x-padding: $spacer * 2 !default;
+$skill-badge-border-color: #1e2d3d !default;
 
 
 
