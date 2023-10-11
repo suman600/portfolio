@@ -1,4 +1,54 @@
-pre{
-  font-size: 18px;
-  line-height: 1.5;
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+.timeline{
+  position: relative;
+  display: flex;
+  padding: $spacer * .5 0;
+  &:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 1.5px solid $gray-two;
+  }
+  &__badge{
+    @include flex-align();
+    margin-left: -#{$spacer * .5};
+    margin-top: 2px;
+    width: 40px;
+    height: 20px;
+    z-index: $zindex-normal;
+    position: relative;
+    background: $gray-three;
+  }
+  &__content{
+    @include flex-column();
+    width: 100%;
+  }
+  p{
+    color: $secondary;
+    font-size: $font-size-base;
+  }
+}
+
+.commit-box{
+  list-style: none;
+  border: 1px solid $commit-border-color;
+  border-radius: $commit-border-radius;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  &__item{
+    padding: $commit-y-padding $commit-x-padding;
+    width: 100%;
+    border-bottom: 1px solid $gray-two;
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+  p{
+    font-weight: 500;
+  }
 }

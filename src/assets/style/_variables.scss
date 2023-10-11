@@ -82,6 +82,7 @@ $line-height-lg: 2 !default;
 
 // zindex
 
+$zindex-normal: 1;
 $zindex-negative: -1;
 
 // heading
@@ -260,7 +261,11 @@ $skill-badge-hover-border-color: $white !default;
 $skill-badge-hover-bg-color: rgba($secondary, 10%) !default;
 
 
-
+// commit
+$commit-border-color: $gray-two !default;
+$commit-border-radius: $border-radius !default;
+$commit-y-padding: $spacer * .625 !default;
+$commit-x-padding: $spacer !default;
 
 
 
