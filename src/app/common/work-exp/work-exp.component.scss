@@ -27,9 +27,8 @@
     @include flex-column();
     width: 100%;
   }
-  p{
+  h5{
     color: $secondary;
-    font-size: $font-size-base;
   }
 }
 

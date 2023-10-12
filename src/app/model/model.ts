@@ -17,3 +17,11 @@ export interface Skill {
   text: string;
   image: string
 }
+
+export interface WorkExp {
+  position: string;
+  company: string;
+  time: string;
+  skills: string[];
+  work: string[];
+}

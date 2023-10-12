@@ -1,13 +1,13 @@
-<div class="timeline" *ngFor="let i of [0,1,2,3,4]">
+<div class="timeline" *ngFor="let work of works">
   <div class="timeline__badge">
     <img src="./assets/img/commit.svg" alt="commit">
   </div>
   <div class="timeline__content">
-    <p>Senior Software Developer <code>(01-04-2023 to Now)</code></p>
+    <h5>{{work.position}}</h5>
+    <p>{{work.company}} <code>({{work.time}})</code></p>
     <ul class="commit-box">
-      <li class="commit-box__item" *ngFor="let i of [0,1,2,3]">
-        <p>comment the sheet json</p>
-        <div>consectetur adipiscing elit, sed do eiusmo consectetur adipiscing elit, sed do eiusmo</div>
+      <li class="commit-box__item" *ngFor="let text of work.work">
+        {{text}}
       </li>
     </ul>
   </div>
