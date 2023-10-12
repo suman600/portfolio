@@ -20,7 +20,7 @@
     height: 19px;
     border: 1px solid $secondary;
     background: $gray-three;
-    border-radius: $border-radius/4;
+    border-radius: $border-radius* .25;
     overflow: hidden;
     cursor: pointer;
     &:after{

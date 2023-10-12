@@ -54,11 +54,12 @@
 .play-start{
   position: absolute;
   bottom: 50px;
-  left: 0;
+  left: 2rem;
   right: 0;
   text-align: center;
   @include flex-root;
   gap: $spacer;
+  width: 238px;
 }
 
 .btn-accent{

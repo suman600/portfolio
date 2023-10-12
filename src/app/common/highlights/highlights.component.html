@@ -1,11 +1,16 @@
-<div class="highlights-play">
-  <div class="play-start" *ngIf="true">
-    <button class="btn btn-accent">start-game</button>
-  </div>
-  <div class="play-start" *ngIf="false">
-    <div class="game-ribbon">WELL DONE!</div>
-    <button class="btn btn-text text-white">play-again</button>
-  </div>
+<canvas class="highlights-play" tabindex="0" #gameCanvas>
+
+</canvas>
+<div class="play-start" *ngIf="!isGameOver && !isGameStarted && !isGameCompleted">
+  <button class="btn btn-accent" (click)="startGame()">Start Game</button>
+</div>
+<div class="play-start" *ngIf="isGameOver">
+  <div class="game-ribbon">GAME OVER!</div>
+  <button class="btn btn-text text-white" (click)="startGame()">Restart again</button>
+</div>
+<div class="play-start" *ngIf="isGameCompleted">
+  <div class="game-ribbon">'WELL DONE!</div>
+  <button class="btn btn-text text-white" (click)="startGame()">Play again</button>
 </div>
 <div class="highlights-control">
   <div class="play-control">
@@ -14,10 +19,10 @@
 // arrows to play
     </pre>
     <div class="btn-group">
-      <button class="btn btn-text"><img src="./assets/img/key-top.svg" alt="key left"></button>
-      <button class="btn btn-text"><img src="./assets/img/key-left.svg" alt="key left"></button>
-      <button class="btn btn-text"><img src="./assets/img/key-bottom.svg" alt="key left"></button>
-      <button class="btn btn-text"><img src="./assets/img/key-right.svg" alt="key left"></button>
+      <button class="btn btn-text" (click)="moveUp()"><img src="./assets/img/key-top.svg" alt="key left"></button>
+      <button class="btn btn-text" (click)="moveLeft()"><img src="./assets/img/key-left.svg" alt="key left"></button>
+      <button class="btn btn-text" (click)="moveDown()"><img src="./assets/img/key-bottom.svg" alt="key left"></button>
+      <button class="btn btn-text" (click)="moveRight()"><img src="./assets/img/key-right.svg" alt="key left"></button>
     </div>
   </div>
   <pre>// food left</pre>
