@@ -52,14 +52,17 @@
   padding: $spacer * .625 $spacer * 2;
 }
 .play-start{
+  background: rgba($gray-three, 0.84);
   position: absolute;
-  bottom: 50px;
+  bottom: 36px;
   left: 2rem;
   right: 0;
   text-align: center;
   @include flex-root;
-  gap: $spacer;
+  gap: $spacer * .75;
   width: 238px;
+  min-height: 120px;
+  padding: $spacer * 1.125 0;
 }
 
 .btn-accent{
@@ -91,7 +94,7 @@
   border-radius: $border-radius;
   background: rgba($play-control-board-bg, 0.19);
   padding: $spacer $spacer * .75;
-  margin-bottom: 20px;
+  margin-bottom: $spacer * 1.125;
 }
 
 pre{
@@ -113,5 +116,9 @@ pre{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   width: max-content;
-  gap: 6px;
+  gap: $spacer * .5;
+}
+
+img.bluer, img.bluer ~ img{
+  opacity: .3;
 }

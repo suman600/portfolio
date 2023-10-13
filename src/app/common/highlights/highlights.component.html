@@ -1,14 +1,12 @@
-<canvas class="highlights-play" tabindex="0" #gameCanvas>
-
-</canvas>
-<div class="play-start" *ngIf="!isGameOver && !isGameStarted && !isGameCompleted">
+<canvas class="highlights-play" tabindex="0" #canvas></canvas>
+<div class="play-start" *ngIf="!isGameStarted && !isGameOver && !isGameCompleted">
   <button class="btn btn-accent" (click)="startGame()">Start Game</button>
 </div>
-<div class="play-start" *ngIf="isGameOver">
+<div class="play-start" *ngIf="isGameOver && !isGameCompleted">
   <div class="game-ribbon">GAME OVER!</div>
   <button class="btn btn-text text-white" (click)="startGame()">Restart again</button>
 </div>
-<div class="play-start" *ngIf="isGameCompleted">
+<div class="play-start" *ngIf="isGameCompleted && !isGameOver">
   <div class="game-ribbon">'WELL DONE!</div>
   <button class="btn btn-text text-white" (click)="startGame()">Play again</button>
 </div>
@@ -26,9 +24,9 @@
     </div>
   </div>
   <pre>// food left</pre>
-  <div class="food-group">
+  <div class="food-group {{foodCount}}">
     <ng-container *ngFor="let i of [0,1,2,3,4,5,6,7,8,9]">
-      <img src="./assets/img/food.svg" alt="fod">
+      <img [ngClass]="{'bluer': foodCount == 10 - i}" src="./assets/img/food.svg" alt="food">
     </ng-container>
   </div>
 </div>
