@@ -1,18 +1,22 @@
 import {Filter} from '../model/model';
 
 export const todo:Filter = {
-  name: 'Todo',
+  name: 'filterProject',
+  text: 'Todo',
   value: 'todoApp',
 };
 export const auth:Filter = {
-  name: 'Auth',
+  name: 'filterProject',
+  text: 'Auth',
   value: 'googleAuth',
 };
 export const sheet:Filter = {
-  name: 'sheet',
+  name: 'filterProject',
+  text: 'sheet',
   value: 'spreadSheet',
 };
 export const theme:Filter = {
-  name: 'Theme',
+  name: 'filterProject',
+  text: 'Theme',
   value: 'vsTheme',
 };

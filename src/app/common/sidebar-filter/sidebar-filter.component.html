@@ -2,7 +2,12 @@
 <div class="filter-group">
   <div class="filter-group__list" *ngFor="let filter of filters">
     <label class="custom-checkbox">
-      <input type="checkbox" [value]="filter.value"><span></span>
-    </label>{{filter.name}}
+      <input type="checkbox"
+             [name]="filter.name"
+             [value]="filter.value"
+             [(ngModel)]="filter.name"
+             (change)="onCheckboxChange(filter.name ? filter.value : false)">
+      <span></span>
+    </label>{{filter.text}}
   </div>
 </div>

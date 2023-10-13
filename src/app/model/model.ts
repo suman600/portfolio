@@ -11,6 +11,7 @@ export interface Tabs {
 
 export interface Filter {
   name:string;
+  text:string;
   value:string;
 }
 export interface Skill {
