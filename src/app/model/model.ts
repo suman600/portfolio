@@ -13,6 +13,7 @@ export interface Filter {
   name:string;
   text:string;
   value:string;
+  checked: boolean,
 }
 export interface Skill {
   text: string;

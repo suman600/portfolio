@@ -1,14 +1,2 @@
 <app-dropdown></app-dropdown>
-<div class="filter-group">
-  <div class="filter-group__list" *ngFor="let filter of filters; index as i">
-    <label class="custom-checkbox">
-      <input type="checkbox"
-             [name]="filter.name"
-             [value]="filter.value"
-             [(ngModel)]="filter.name"
-             [checked]="i == 0"
-             (change)="onCheckboxChange(filter.name ? filter.value : false)">
-      <span></span>
-    </label>{{filter.text}}
-  </div>
-</div>
+<app-filter-group></app-filter-group>
