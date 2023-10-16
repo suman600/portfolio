@@ -1,6 +1,9 @@
 <app-sidebar-about class="sidebar"></app-sidebar-about>
 <section>
-<app-about-me *ngIf="type == 'aboutMe'"></app-about-me>
-<app-work-exp *ngIf="type == 'workExp'"></app-work-exp>
-<app-skills *ngIf="type == 'skill'"></app-skills>
+  <app-about-me *ngIf="type == 'aboutMe'"></app-about-me>
+  <app-work-exp *ngIf="type == 'workExp'"></app-work-exp>
+  <app-skills *ngIf="type == 'skill'"></app-skills>
+  <div *ngIf="type == 'eduction'">
+    <h3>education</h3>
+  </div>
 </section>

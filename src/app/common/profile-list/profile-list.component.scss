@@ -22,7 +22,7 @@
   font-weight: $contact-list-weight;
   cursor: pointer;
   text-decoration: none;
-  &:hover, &:active{
+  &:hover, &:active, &.active{
     color: $contact-list-color-active;
   }
 }

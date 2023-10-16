@@ -34,3 +34,8 @@ export interface Card {
   link: string;
   view: string;
 }
+export interface ProList {
+  image: string;
+  text: string;
+  type: string;
+}

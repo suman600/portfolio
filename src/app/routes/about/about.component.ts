@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnChanges, OnInit} from '@angular/core';
+import {AppService} from "../../service/app.service";
 
 @Component({
   selector: 'app-about',
@@ -6,10 +7,13 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  @Input() type: string = 'aboutMe'
-  constructor() { }
+    type: string = 'aboutMe';
+    constructor(private service: AppService) { }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+      this.service.subject.subscribe((data) =>{
+        this.type = data;
+      })
+    }
 
 }
