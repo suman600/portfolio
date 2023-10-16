@@ -1,9 +1,9 @@
-<div class="card">
+<a class="card" [href]="card.link" target="_blank">
   <div class="card__header">
-    <img class="thumbnail" src="./assets/img/card-4.webp" alt="image" >
+    <img class="thumbnail" [src]="card.image" alt="image" >
   </div>
   <div class="card__content">
-    <p>n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to</p>
-    <button class="btn btn-dark">view-project</button>
+    <p>{{card.text}}</p>
+    <a class="btn btn-dark" [href]="card.view" target="_blank">view-project</a>
   </div>
-</div>
+</a>

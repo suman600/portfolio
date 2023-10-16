@@ -1,0 +1,28 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+.folder-group{
+  @include flex-column();
+  gap: $spacer * .625;
+  padding: $spacer $spacer * 1.375;
+  min-height: 95px;
+  border-bottom: 1px solid $gray-two;
+  &:last-child{
+    border-bottom: 0;
+  }
+  &--about{
+    gap: $spacer;
+  }
+}
+.about-list{
+  @include flex-align();
+  gap: $contact-list-flex-gap;
+  color: $contact-list-color;
+  font-size: $contact-list-size;
+  font-weight: $contact-list-weight;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover, &:active{
+    color: $contact-list-color-active;
+  }
+}

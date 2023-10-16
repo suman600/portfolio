@@ -26,3 +26,11 @@ export interface WorkExp {
   skills: string[];
   work: string[];
 }
+
+export interface Card {
+  image: string;
+  title: string;
+  text: string;
+  link: string;
+  view: string;
+}

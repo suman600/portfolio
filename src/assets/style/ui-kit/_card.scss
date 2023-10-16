@@ -1,10 +1,12 @@
 @import "../variables";
 .card{
+  display: block;
   color: $card-color;
   font-size: $card-font-color;
   border-radius: $card-border-radius;
   border: $card-border-width solid $card-border-color;
   background: $card-bg-color;
+  outline: 0;
   overflow: hidden;
   &__content{
     padding: $card-xy-padding $card-lr-padding;
