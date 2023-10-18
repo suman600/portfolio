@@ -10,8 +10,8 @@ form{
 }
 
 .state-success{
-  padding: $spacer * 2 $spacer * 2;
-  @include flex-align();
+  padding: 270px $spacer * 2 $spacer * 2;
+  @include flex-column();
   display: flex;
   align-items: center;
   gap: 4px;

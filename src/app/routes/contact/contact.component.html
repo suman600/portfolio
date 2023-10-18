@@ -1,7 +1,7 @@
 <app-sidebar-contact class="sidebar"></app-sidebar-contact>
 <section>
-  <app-form-contact></app-form-contact>
-  <app-code-snipped></app-code-snipped>
+  <app-form-contact (contactItemEvent)="contactItemEvent($event)"></app-form-contact>
+  <app-code-snipped [formInput]="formeData"></app-code-snipped>
 </section>
 
 

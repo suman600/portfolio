@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {AppService} from "../../service/app.service";
 import {FormBuilder, FormGroup, Validators,} from "@angular/forms";
 
@@ -12,10 +12,15 @@ export class FormContactComponent implements OnInit {
   myForm: FormGroup;
   emailPattern = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$";
 
-  constructor(
-    private service: AppService,
-    private fb: FormBuilder
-  ) {
+  eventData = {
+    name: '',
+    email: '',
+    message: ''
+  }
+  @Output() contactItemEvent = new EventEmitter<any>();
+
+  constructor(private service: AppService, private fb: FormBuilder)
+  {
     this.initializeFrom();
   }
 
@@ -29,6 +34,11 @@ export class FormContactComponent implements OnInit {
     })
   }
   reGenerateForm(){
+    this.eventData = {
+      name: '',
+      email: '',
+      message: ''
+    }
     this.isFormSubmitted = false;
   }
   resetForm(){
@@ -40,4 +50,17 @@ export class FormContactComponent implements OnInit {
     this.resetForm();
   }
 
+
+  nameKeyup(param:string){
+    this.eventData.name = param;
+    this.contactItemEvent.emit(this.eventData);
+  }
+  emailKeyup(param:string){
+    this.eventData.email = param;
+    this.contactItemEvent.emit(this.eventData);
+  }
+  messageKeyup(param:string){
+    this.eventData.message = param;
+    this.contactItemEvent.emit(this.eventData);
+  }
 }

@@ -10,5 +10,6 @@
   overflow: hidden;
   &__content{
     padding: $card-xy-padding $card-lr-padding;
+    background: darken($gray-three, 1.5%);
   }
 }
