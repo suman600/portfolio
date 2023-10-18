@@ -6,10 +6,11 @@
   overflow: hidden;
 }
 section{
+  flex: 1;
   display: grid;
   grid-template-columns: 630px 1fr;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 app-form-contact{
   display: block;

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Card} from "../../model/model";
-import {auth, sheet, theme, todo} from "../../links/cards";
+import {AppService} from "../../service/app.service";
 
 @Component({
   selector: 'app-project',
@@ -9,11 +9,14 @@ import {auth, sheet, theme, todo} from "../../links/cards";
 })
 export class ProjectComponent implements OnInit {
 
-  cards:Card[] = [todo,auth, sheet, theme];
-  constructor() { }
+  cards:Card[] = [];
+  constructor(private service: AppService) { }
 
   ngOnInit(): void {
-    console.log(this.cards);
+    this.service.projectSwitch.subscribe((data) =>{
+      this.cards = data;
+      console.log('suman', data);
+    })
   }
 
 }

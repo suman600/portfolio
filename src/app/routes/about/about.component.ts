@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
     constructor(private service: AppService) { }
 
     ngOnInit(): void {
-      this.service.subject.subscribe((data) =>{
+      this.service.aboutTabs.subscribe((data) =>{
         this.type = data;
       })
     }

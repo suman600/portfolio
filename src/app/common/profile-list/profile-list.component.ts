@@ -17,7 +17,7 @@ export class ProfileListComponent implements OnInit {
   ngOnInit(): void {}
 
   aboutSwitch(param:string, index:any){
-    this.service.subject.next(param);
+    this.service.aboutTabs.next(param);
     this.selectedIndex = index
   }
 

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Filter} from "../../model/model";
-import {auth, sheet, theme, todo} from "../../links/filter";
+import {authFilter, sheetFilter, themeFilter, todoFilter} from "../../links/filter";
+import {AppService} from "../../service/app.service";
+import {todo} from "../../links/cards";
 
 @Component({
   selector: 'app-filter-group',
@@ -8,24 +10,24 @@ import {auth, sheet, theme, todo} from "../../links/filter";
   styleUrls: ['./filter-group.component.scss']
 })
 export class FilterGroupComponent implements OnInit {
-  filters:Filter[] = [todo, auth, sheet, theme];
-  filteredArr:string[] = ['todoApp'];
-  constructor() { }
+  filters:Filter[] = [todoFilter, authFilter, sheetFilter, themeFilter];
+  filteredArr:any = [todo];
 
-  ngOnInit(): void {}
+  constructor(private service: AppService) {
 
-  onCheckboxChange(param:any) {
-    let value =  param.value;
-    let hasItem = this.filteredArr.includes(value);
-    let index = this.filteredArr.indexOf(value);
-    if (param && value) {
-      if (!hasItem) {
-        this.filteredArr.push(value);
-      } else {
-        this.filteredArr.splice(index, 1);
-      }
-    }
-    console.log(this.filteredArr)
   }
 
+  ngOnInit(): void {
+    this.service.projectSwitch.next(this.filteredArr);
+  }
+
+  onCheckboxChange(param:any) {
+    this.filteredArr = [];
+    param.forEach((item:any) =>{
+      if(item.checked){
+        this.filteredArr.push(item.obj);
+      }
+    })
+    this.service.projectSwitch.next(this.filteredArr);
+  }
 }

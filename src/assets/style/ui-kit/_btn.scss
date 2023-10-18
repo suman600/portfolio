@@ -4,6 +4,10 @@
 
 .btn{
   @include button-style();
+  &:disabled, &.disabled{
+    opacity: .5;
+    cursor: not-allowed;
+  }
 }
 @each $name, $btn in $btn-theme {
   .btn-#{$name}{

@@ -14,6 +14,7 @@ export interface Filter {
   text:string;
   value:string;
   checked: boolean,
+  obj: {};
 }
 export interface Skill {
   text: string;
@@ -39,4 +40,10 @@ export interface ProList {
   image: string;
   text: string;
   type: string;
+}
+
+export interface FormData {
+  name: string;
+  email: string;
+  message: string;
 }

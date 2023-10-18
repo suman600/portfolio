@@ -1,20 +1,20 @@
-<form>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
   <div class="form-group">
     <label class="form-label" for="name">_name:</label>
-    <input class="form-input" type="text" id="name" name="name" autocomplete="off">
+    <input class="form-input" formControlName="name" type="text" id="name" name="name" autocomplete="off">
   </div>
   <div class="form-group">
     <label class="form-label" for="name">_email:</label>
-    <input class="form-input" type="text" id="email" name="email" autocomplete="off">
+    <input class="form-input" formControlName="email" type="text" id="email" name="email" autocomplete="off">
   </div>
   <div class="form-group">
     <label class="form-label" for="message">_message:</label>
-    <textarea class="form-input" rows="4" cols="10" id="message" name="message" autocomplete="off" ></textarea>
+    <textarea class="form-input" formControlName="message" rows="4" cols="10" id="message" name="message" autocomplete="off" ></textarea>
   </div>
-  <button type="submit" class="btn btn-dark">submit-message</button>
+  <button type="submit" class="btn btn-dark" [disabled]="myForm.invalid">submit-message</button>
 </form>
 <div class="state-success" *ngIf="false">
   <h2>Thank you! 🤘</h2>
   <p>Your message has been accepted. You <br>will recieve answer really soon!</p>
-  <button type="button" class="btn btn-dark">send-new-message</button>
+  <button type="button" class="btn btn-dark" (click)="reGenerateForm()">send-new-message</button>
 </div>

@@ -1,26 +1,31 @@
 import {Filter} from '../model/model';
+import {todo, auth, sheet, theme} from './cards'
 
-export const todo:Filter = {
+export const todoFilter:Filter = {
   name: 'filterProject',
   text: 'Todo',
   value: 'todoApp',
   checked: true,
+  obj: todo,
 };
-export const auth:Filter = {
+export const authFilter:Filter = {
   name: 'filterProject',
   text: 'Auth',
   value: 'googleAuth',
   checked: false,
+  obj: auth,
 };
-export const sheet:Filter = {
+export const sheetFilter:Filter = {
   name: 'filterProject',
   text: 'sheet',
   value: 'spreadSheet',
   checked: false,
+  obj: sheet,
 };
-export const theme:Filter = {
+export const themeFilter:Filter = {
   name: 'filterProject',
   text: 'Theme',
   value: 'vsTheme',
   checked: false,
+  obj: theme,
 };

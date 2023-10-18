@@ -6,13 +6,16 @@ import {FileTabExportModule} from "../../common/file-tab/file-tab-export.module"
 import {FormContactComponent} from "../../common/form-contact/form-contact.component";
 import {CodeSnippedComponent} from "../../common/code-snipped/code-snipped.component";
 import {SidebarContactExportModule} from "../../common/sidebar-contact/sidebar-contact-export.module";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   imports: [
     CommonModule,
     FileTabExportModule,
     ContactRoutingModule,
-    SidebarContactExportModule
+    SidebarContactExportModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [
     ContactComponent,
