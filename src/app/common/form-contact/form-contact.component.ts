@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {AppService} from "../../service/app.service";
 import {FormBuilder, FormGroup, Validators,} from "@angular/forms";
 
-
 @Component({
   selector: 'app-form-contact',
   templateUrl: './form-contact.component.html',
@@ -37,6 +36,7 @@ export class FormContactComponent implements OnInit {
     this.isFormSubmitted = true;
   }
   onSubmit(){
+    this.service.addDataFireBase(this.myForm.value);
     this.resetForm();
   }
 
