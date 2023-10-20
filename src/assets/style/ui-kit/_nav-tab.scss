@@ -16,7 +16,7 @@
     right: 0;
     bottom: 0;
   }
-  &:hover, &:active{
+  &:hover, &:active, &.active{
     color: $nav-tab-hover-active-color;
     &:after{
       content: "";

@@ -91,7 +91,6 @@ export class HighlightsComponent implements OnInit {
     return snake;
   }
   moveSnake() {
-    console.log(this.foodCount)
     if (this.isGameOver || this.isGameCompleted) {
       return;
     }

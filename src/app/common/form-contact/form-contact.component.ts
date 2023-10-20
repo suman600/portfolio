@@ -40,6 +40,7 @@ export class FormContactComponent implements OnInit {
       message: ''
     }
     this.isFormSubmitted = false;
+    this.contactItemEvent.emit(this.eventData);
   }
   resetForm(){
     this.myForm.reset();

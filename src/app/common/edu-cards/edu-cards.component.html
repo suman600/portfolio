@@ -1,0 +1,11 @@
+<div class="card" *ngFor="let edu of educations">
+  <div class="card__header">
+    <span>{{edu.title}}</span>
+    <small>{{edu.date}}</small>
+  </div>
+  <div class="card__content">
+    <div>School: <span class="text-comment">{{edu.school}}</span></div>
+    <div>Marks: <span class="text-comment">{{edu.marks}}</span></div>
+    <div>Subjects: <span class="text-comment">{{edu.subjects}}</span></div>
+  </div>
+</div>

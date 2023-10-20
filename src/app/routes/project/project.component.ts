@@ -15,7 +15,6 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
     this.service.projectSwitch.subscribe((data) =>{
       this.cards = data;
-      console.log('suman', data);
     })
   }
 

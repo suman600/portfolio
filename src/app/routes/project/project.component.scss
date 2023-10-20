@@ -14,3 +14,26 @@ section{
   overflow: auto;
 }
 
+.empty-state{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 40%;
+    height: auto;
+    animation: zoom .3s;
+    animation-fill-mode: forwards;
+  }
+}
+app-card{
+  animation: zoom .3s;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom {
+  from{
+    transform: scale(.9);
+  }
+  to{
+    transform: scale(1);
+  }
+}

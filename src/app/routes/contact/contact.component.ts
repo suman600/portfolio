@@ -14,6 +14,5 @@ export class ContactComponent implements OnInit {
 
   contactItemEvent($event:any){
     this.formeData = $event;
-    console.log(this.formeData);
   }
 }

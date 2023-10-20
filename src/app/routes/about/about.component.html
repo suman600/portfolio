@@ -3,7 +3,5 @@
   <app-about-me *ngIf="type == 'aboutMe'"></app-about-me>
   <app-work-exp *ngIf="type == 'workExp'"></app-work-exp>
   <app-skills *ngIf="type == 'skill'"></app-skills>
-  <div *ngIf="type == 'eduction'">
-    <h3>education</h3>
-  </div>
+  <app-edu-cards *ngIf="type == 'eduction'"></app-edu-cards>
 </section>

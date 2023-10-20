@@ -6,6 +6,7 @@ import {AboutMeComponent} from "../../common/about-me/about-me.component";
 import {WorkExpComponent} from "../../common/work-exp/work-exp.component";
 import {SkillsComponent} from "../../common/skills/skills.component";
 import {SidebarAboutExportModule} from "../../common/sidebar-about/sidebar-about-export.module";
+import {EduCardsComponent} from "../../common/edu-cards/edu-cards.component";
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import {SidebarAboutExportModule} from "../../common/sidebar-about/sidebar-about
     AboutComponent,
     AboutMeComponent,
     WorkExpComponent,
-    SkillsComponent]
+    SkillsComponent,
+    EduCardsComponent]
 })
 export class AboutModule { }

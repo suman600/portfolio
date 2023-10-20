@@ -29,3 +29,10 @@ footer{
 .tab-group, .link-group{
   @include nav-group();
 }
+router-outlet{
+  display: none;
++ *{
+  flex: 1;
+}
+
+}

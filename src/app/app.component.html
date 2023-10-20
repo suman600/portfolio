@@ -1,8 +1,11 @@
 <header>
   <div class="tab-group">
     <span class="nav-tab">micheal-weaver</span>
-    <ng-container *ngFor="let tab of tabs">
-      <a [routerLink]="tab.url" class="nav-tab" tabindex="-1">{{tab.name}}</a>
+    <ng-container *ngFor="let tab of tabs; index as index">
+      <a class="nav-tab"
+         (click)="switchTab(index)"
+         [ngClass]="{'active': selectedIndex == index}"
+         [routerLink]="tab.url" tabindex="-1">{{tab.name}}</a>
     </ng-container>
   </div>
 </header>

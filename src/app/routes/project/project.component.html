@@ -1,8 +1,11 @@
 <!--<app-file-tab></app-file-tab>-->
 <app-sidebar-filter class="sidebar"></app-sidebar-filter>
-<section>
+<section *ngIf="cards.length">
   <app-card *ngFor="let card of cards" [card]="card"></app-card>
 </section>
+<div class="empty-state" *ngIf="!cards.length">
+  <img src="../../../assets/img/punch.svg" />
+</div>
 
 
 

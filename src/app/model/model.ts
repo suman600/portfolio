@@ -47,3 +47,12 @@ export interface FormData {
   email: string;
   message: string;
 }
+
+export interface EduData {
+  title: string;
+  date: string;
+  school: string;
+  marks: string;
+  subjects: string;
+}
+
