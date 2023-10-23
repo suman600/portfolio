@@ -9,90 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    .hidden{
-      display: none !important;
-    }
-    .theme-loader__header{
-      border-bottom: 1px solid #1e2d3d;
-      height: 57px;
-    }
-    .theme-loader__footer{
-      border-top: 1px solid #1e2d3d;
-      height: 57px;
-    }
-    .theme-loader__progress{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border: 1px solid #1e2d3d;
-      height: 9px;
-      width: 300px;
-      opacity: 0;
-      transform: translate(-50%, -50%);
-      animation-name: display;
-      animation-duration: 0s;
-      animation-fill-mode: forwards;
-      animation-delay: .5s;
-    }
-    .theme-loader__progress span{
-      position: absolute;
-      background: #fea55f;
-      height: 100%;
-      width: 100%;
-      animation-fill-mode:  forwards;
-      animation: 1s loading;
-      animation-delay: .44s;
-    }
-    .theme-loader{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      border-radius: 0.5em;
-      border: 1px solid #1e2d3d;
-      background: #011627;
-      overflow: hidden;
-      opacity: 1;
-      animation: .3s ease-out opacity
-    }
-
-    @keyframes opacity {
-      from{opacity: 0}
-      to{opacity: 1}
-    }
-    @keyframes loading {
-      0% {width: 0;}
-      40%{
-        width: 30%;
-      }
-      50%{
-        width: 35%;
-      }
-      55%{
-        width: 40%;
-      }
-      60%{
-        width: 50%;
-      }
-      65%{
-        width: 55%;
-      }
-      100% {
-        width:100%;
-      }
-    }
-    @keyframes display {
-      0% {opacity: 0}
-      100% {
-        opacity: 1;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/utility/loading.css">
+  <link rel="stylesheet" href="assets/utility/cursor.css">
 </head>
 <body>
+  <div id="customCursor"></div>
   <app-root class="hidden"></app-root>
   <div class="theme-loader ">
     <div class="theme-loader__header"></div>
@@ -101,20 +22,7 @@
       <span></span>
     </div>
   </div>
-  <script>
-    let hasThemeLoaded = localStorage.getItem("themeLoaded");
-    let eleAppRoot = document.getElementsByClassName('hidden');
-    let eleTheme = document.getElementsByClassName('theme-loader');
-    if(hasThemeLoaded){
-      eleAppRoot.item(0).classList.remove('hidden');
-      eleTheme.item(0).classList.add('hidden')
-    }
-    setTimeout(setStorage, 2000);
-    function setStorage(){
-      localStorage.setItem('themeLoaded', true);
-      eleAppRoot.item(0).classList.remove('hidden');
-      eleTheme.item(0).classList.add('hidden');
-    }
-  </script>
+  <script src="assets/utility/loading.js"></script>
+  <script src="assets/utility/cursor.js"></script>
 </body>
 </html>
