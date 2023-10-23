@@ -17,6 +17,22 @@ section{
 app-about-me,
 app-work-exp,
 app-skills{
+  position: relative;
   height: 100%;
   display: block;
+  animation: animate .3s linear;
+}
+app-edu-cards{
+  position: relative;
+  animation: animate .3s linear;
+}
+@keyframes animate {
+  from{
+    top: 10px;
+    opacity: 0;
+  }
+  to{
+    top: 0;
+    opacity: 1;
+  }
 }

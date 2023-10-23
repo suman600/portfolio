@@ -8,6 +8,10 @@
   color: $nav-tab-color;
   border-right: 1px solid $nav-tab-border-color;
   cursor: pointer;
+  @media screen and (max-width: 799px) {
+    $nav-tab-padding-x: $spacer * 1.5;
+    padding:  $nav-tab-padding-y $nav-tab-padding-x;
+  }
   &:after{
     position: absolute;
     height: $nav-tab-hover-active-border-height;

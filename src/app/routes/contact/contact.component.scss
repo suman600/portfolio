@@ -8,9 +8,14 @@
 section{
   flex: 1;
   display: grid;
-  grid-template-columns: 630px 1fr;
+  grid-template-columns: minmax(max-content, 630px) max-content;
   height: 100%;
   overflow: auto;
+  @media screen and (max-width: 1099px) {
+    grid-template-columns: 1fr;
+    height: max-content;
+    max-height: 100%;
+  }
 }
 app-form-contact{
   display: block;

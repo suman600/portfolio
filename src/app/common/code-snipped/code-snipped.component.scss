@@ -1,9 +1,32 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
 .code-sniped{
   padding: 140px 50px;
+  @media screen and (max-width: 1599px) {
+    padding: 100px 40px;
+  }
+  @media screen and (max-width: 1499px) {
+    padding: 80px 30px;
+  }
+  @media screen and (max-width: 1499px) {
+    padding: 80px 10px;
+  }
+  @media screen and (max-width: 1099px) {
+    padding: 100px 50px 0;
+  }
+  @media screen and (max-width: 799px) {
+    padding: 60px 40px 0;
+  }
 }
 pre{
   font-size: 18px;
   line-height: 1.5;
+  @media screen and (max-width: 1399px) {
+    font-size: $font-size-base;
+  }
+  @media screen and (max-width: 899px) {
+    font-size: $font-size-base * .75;
+  }
 }
 .text-truncate{
   display: inline-block;

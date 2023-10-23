@@ -1,5 +1,6 @@
 @import "../assets/style/variables";
 @import "../assets/style/mixing/mixings";
+
 header {
   border-bottom: 1px solid $gray-two;
 }
@@ -9,6 +10,9 @@ footer{
 .nav-tab:first-child {
   width: $sidebar-width;
   pointer-events: none;
+  @media screen and (max-width: 1599px) {
+    width: $sidebar-md-width;
+  }
   &:after{
     content: none;
   }
@@ -28,11 +32,4 @@ footer{
 }
 .tab-group, .link-group{
   @include nav-group();
-}
-router-outlet{
-  display: none;
-+ *{
-  flex: 1;
-}
-
 }

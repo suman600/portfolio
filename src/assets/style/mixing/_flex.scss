@@ -1,6 +1,7 @@
 @mixin flex-root(){
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr max-content;
 }
 @mixin flex-column(){
   display: flex;

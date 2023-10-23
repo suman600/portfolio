@@ -16,6 +16,9 @@
   color: $indigo;
   font-size: $intro-font-code-size;
   margin-bottom: $spacer*6.5;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: $spacer*3.5;
+  }
 }
 .text-comment{
   margin-bottom: $spacer*.625;

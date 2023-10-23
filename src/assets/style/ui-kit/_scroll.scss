@@ -1,21 +1,29 @@
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
+  @media screen and (max-width: 1299px) {
+    width: 4px;
+    height: 4px;
+  }
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #011627;
+  background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #607B96;
+  background: $gray-two;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: lighten(#607B96, 15%);
+  background: lighten($gray-two, 10%);
 
+}
+::-webkit-scrollbar-corner{
+  display: none;
 }

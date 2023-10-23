@@ -1,8 +1,29 @@
 @import "../../../assets/style/variables";
 :host{
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 610px 1fr;
   padding: $spacer $spacer $spacer $sidebar-width;
   align-items: center;
   grid-gap: $hello-grid-gap;
+  height: 100%;
+  @media screen and (max-width: 1599px) {
+    grid-template-columns: 1fr 1fr;
+    padding-left: $sidebar-md-width;
+  }
+  @media screen and (max-width: 1399px) {
+    padding-left: $sidebar-sm-width;
+  }
+  @media screen and (max-width: 1299px) {
+    padding-left: $sidebar-xs-width;
+  }
+  @media screen and (max-width: 1200px){
+    padding-left: #{$sidebar-xs-width - 20};
+  }
+  @media screen and (max-width: 1199px) {
+    grid-template-columns: 1fr;
+    app-highlights {
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }

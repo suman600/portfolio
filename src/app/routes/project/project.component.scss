@@ -1,17 +1,41 @@
 @import "../../../assets/style/variables";
 
-:host{
-  display: flex;
-  overflow: hidden;
-}
-
 section{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   flex: 1;
   padding: 120px 140px;
-  grid-gap: 40px;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
   overflow: auto;
+  @media screen and (max-width: 1599px) {
+    padding: 100px 100px;
+  }
+  @media screen and (max-width: 1599px) {
+    padding: 60px 60px;
+  }
+  @media screen and (max-width: 1299px) {
+    padding: 40px 40px;
+    grid-column-gap: 20px;
+  }
+  @media screen and (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px 60px;
+    grid-column-gap: 60px;
+  }
+  @media screen and (max-width: 999px) {
+    padding: 40px 30px;
+    grid-column-gap: 30px;
+    height: max-content;
+  }
+  @media screen and (max-width: 899px) {
+    grid-template-columns: 1fr;
+    height: max-content;
+    max-height: 100%;
+    app-card{
+      max-width: 400px;
+    }
+  }
 }
 
 .empty-state{

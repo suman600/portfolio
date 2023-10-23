@@ -58,7 +58,7 @@
   left: 2rem;
   right: 0;
   text-align: center;
-  @include flex-root;
+  @include flex-column;
   gap: $spacer * .75;
   width: 238px;
   min-height: 120px;
