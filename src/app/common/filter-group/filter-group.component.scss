@@ -1,12 +1,13 @@
 @import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+
 .filter-group{
   padding: $spacer * 1.125 $spacer * 1.375;
-  display: flex;
-  flex-direction: column;
+  @include flex-column();
   gap: $spacer * 1.125;
   &__list{
-    display: flex;
-    align-items: center;
+    @include flex-align();
     gap: $spacer * 1.5;
     &:has(input:checked){
       color: $white;

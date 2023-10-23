@@ -6,9 +6,9 @@
   overflow: hidden;
 }
 section{
-  flex: 1;
   display: grid;
   grid-template-columns: minmax(max-content, 630px) max-content;
+  flex: 1;
   height: 100%;
   overflow: auto;
   @media screen and (max-width: 1099px) {
