@@ -7,6 +7,8 @@ section{
   padding: 120px 140px;
   grid-row-gap: 40px;
   grid-column-gap: 40px;
+  max-height: 100%;
+  height: max-content;
   overflow: auto;
   @media screen and (max-width: 1599px) {
     padding: 100px 100px;
@@ -24,16 +26,14 @@ section{
     grid-column-gap: 60px;
   }
   @media screen and (max-width: 999px) {
-    padding: 40px 30px;
+    padding: 60px 30px;
     grid-column-gap: 30px;
-    height: max-content;
   }
   @media screen and (max-width: 899px) {
     grid-template-columns: 1fr;
-    height: max-content;
-    max-height: 100%;
+    padding: 60px 60px;
     app-card{
-      max-width: 400px;
+      max-width: 360px;
     }
   }
 }
@@ -47,6 +47,11 @@ section{
     height: auto;
     animation: zoom .3s;
     animation-fill-mode: forwards;
+  }
+  @media screen and (max-width: 999px) {
+    img{
+      width: 60%;
+    }
   }
 }
 app-card{
