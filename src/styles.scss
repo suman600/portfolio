@@ -23,4 +23,7 @@ router-outlet{
     max-height: calc(100vh - 142px);
     overflow: hidden;
   }
+ + app-hello{
+   overflow: visible;
+ }
 }

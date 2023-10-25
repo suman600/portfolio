@@ -1,0 +1,5 @@
+<ng-container *ngFor="let tab of tabs; index as index">
+  <a class="nav-tab"
+     [ngClass]="{'active': selectedIndex == index}"
+     [routerLink]="tab.url" tabindex="-1">{{tab.name}}</a>
+</ng-container>

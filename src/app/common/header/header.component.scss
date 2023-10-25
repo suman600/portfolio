@@ -1,0 +1,23 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+:host {
+  border-bottom: 1px solid $gray-two;
+  @include nav-group();
+}
+app-nav-tabs{
+  flex: 1;
+  display: flex;
+}
+
+.nav-tab{
+  width: $sidebar-width;
+  pointer-events: none;
+  @media screen and (max-width: 1599px) {
+    width: $sidebar-md-width;
+  }
+  &:after{
+    content: none;
+  }
+  border-right: 1px solid $gray-two;
+}
