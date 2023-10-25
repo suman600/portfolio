@@ -20,6 +20,7 @@ router-outlet{
   + *{
     display: flex;
     height: 100%;
+    max-height: calc(100vh - 142px);
     overflow: hidden;
   }
 }

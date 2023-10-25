@@ -1,5 +1,9 @@
 @import "../../../assets/style/variables";
 @import "../../../assets/style/mixing/mixings";
+
+:host {
+  overflow: auto;
+}
 app-phone-email{
   display: block;
   border-bottom: 1px solid $gray-two;
