@@ -3,6 +3,7 @@ import {Filter} from "../../model/model";
 import {authFilter, sheetFilter, themeFilter, todoFilter} from "../../links/filter";
 import {AppService} from "../../service/app.service";
 import {todo} from "../../links/cards";
+import {NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-filter-group',
@@ -10,15 +11,22 @@ import {todo} from "../../links/cards";
   styleUrls: ['./filter-group.component.scss']
 })
 export class FilterGroupComponent implements OnInit {
-  filters:Filter[] = [todoFilter, authFilter, sheetFilter, themeFilter];
+  filters:Filter[] = [{...todoFilter}, {...authFilter}, {...sheetFilter}, {...themeFilter}];
   filteredArr:any = [todo];
 
-  constructor(private service: AppService) {
-
+  constructor(
+    private service: AppService,
+    private router: Router
+  ) {
   }
 
   ngOnInit(): void {
     this.service.projectSwitch.next(this.filteredArr);
+    this.router.events.subscribe((data:any) =>{
+      if (data instanceof NavigationEnd){
+        this.service.projectSwitch.next([todo]);
+      }
+    })
   }
 
   onCheckboxChange(param:any) {
