@@ -1,0 +1,12 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+
+.nav-links{
+  @include nav-group();
+  min-height: 49px;
+  &:last-child{
+    margin-left: auto;
+    border-left: 1px solid $nav-tab-border-color;
+  }
+}

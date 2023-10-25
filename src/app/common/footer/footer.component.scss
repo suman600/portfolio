@@ -1,0 +1,21 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+:host{
+  @include nav-group();
+  border-top: 1px solid $gray-two;
+}
+app-nav-link{
+  flex: 1;
+  @include nav-group();
+}
+
+.nav-links{
+  padding-left: $spacer*1.5;
+  padding-right: $spacer*1.5;
+  @include nav-group();
+  min-height: 49px;
+  pointer-events: none
+}
+
+

@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Links} from "./model/model";
-import {linkedIn, facebook, github, twitter} from  "./links/links";
 
 @Component({
   selector: 'app-root',
@@ -10,11 +8,11 @@ import {linkedIn, facebook, github, twitter} from  "./links/links";
 
 export class AppComponent implements OnInit{
   title = 'portfolio';
-  links: Links [] = [linkedIn,facebook,twitter,github];
 
   constructor() {
   }
 
   ngOnInit() {
   }
+
 }

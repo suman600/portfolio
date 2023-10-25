@@ -2,14 +2,5 @@
 <div>
   <router-outlet></router-outlet>
 </div>
-<footer>
-  <div class="link-group">
-    <span class="nav-links">find me in:</span>
-    <ng-container *ngFor="let link of links">
-      <a class="nav-links" [href]="link.href" tabindex="-1">
-        <img  [src]="link.url" [alt]="link.name">
-      </a>
-    </ng-container>
-  </div>
-</footer>
+<app-footer></app-footer>
 

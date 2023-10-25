@@ -9,6 +9,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import {HeaderExportModule} from "./common/header/header-export.module";
+import {FooterExportModule} from "./common/footer/footer-export.module";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {HeaderExportModule} from "./common/header/header-export.module";
     HttpClientModule,
     AppRoutingModule,
     HeaderExportModule,
+    FooterExportModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
