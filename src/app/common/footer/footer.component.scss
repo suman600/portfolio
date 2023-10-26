@@ -5,7 +5,9 @@
   position: relative;
   @include nav-group();
   border-top: 1px solid $gray-two;
+  z-index: $zindex-normal;
 }
+
 app-nav-link{
   flex: 1;
   @include nav-group();
@@ -18,5 +20,9 @@ app-nav-link{
   min-height: 49px;
   pointer-events: none
 }
-
+@media screen and (max-width: 767px) {
+  :host{
+    background: #011627;
+  }
+}
 

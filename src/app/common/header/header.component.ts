@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavigationEnd, Router, Event} from "@angular/router";
 
 
 @Component({
@@ -7,15 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  showSidebar:boolean;
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-
+  this.router.events.subscribe((event)=>{
+    if(event instanceof NavigationEnd){
+      this.showSidebar = false;
+    }
+  })
   }
 
   toggleSidebar(){
-
+    this.showSidebar = !this.showSidebar
   }
 
 }

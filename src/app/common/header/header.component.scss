@@ -5,17 +5,21 @@
   position: relative;
   border-bottom: 1px solid $gray-two;
   @include nav-group();
+  z-index: $zindex-normal;
 }
 app-nav-tabs{
   flex: 1;
   @include nav-group();
 }
+.hamburger{
+  display: none;
+}
 .nav-tab{
   width: 100%;
   border-right: 1px solid $gray-two;
-  pointer-events: none;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     width: $sidebar-md-width;
+    pointer-events: none;
   }
   @media screen and (min-width: 1600px) {
     width: $sidebar-width;
@@ -37,15 +41,34 @@ app-nav-tabs{
 @media screen and (max-width: 767px) {
   :host{
     flex-direction: column;
+    border-bottom: 0;
+  }
+  .hamburger{
+    display: block;
   }
   app-nav-tabs{
     flex-direction: column;
-    width: 100%;
+    position: fixed;
+    left: calc($spacer + 1px);
+    right: calc($spacer + 1px);
+    top: 75px;
+    bottom: 67px;
+    z-index: $zindex-normal;
+    background: #011627;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .2s;
   }
   .nav-tab{
     @include flex-align();
     justify-content: space-between;
     border-bottom: 1px solid $gray-two;
     border-right: 0;
+  }
+  .show + app-nav-tabs{
+    width: calc(100% - ($spacer + 1px)*2);
+    opacity: 1;
+    transition: all .2s;
   }
 }

@@ -15,15 +15,12 @@ app-root{
   width: 100%;
   overflow: hidden;
 }
-router-outlet{
-  display: none;
-  + *{
-    display: flex;
-    height: 100%;
-    max-height: calc(100vh - 142px);
-    overflow: hidden;
-  }
- + app-hello{
-   overflow: visible;
- }
+app-hello, app-contact, app-project,app-about{
+  display: flex;
+  height: 100%;
+  max-height: calc(100vh - 142px);
+  overflow: hidden;
+}
+app-hello{
+  overflow: visible;
 }

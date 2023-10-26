@@ -1,12 +1,6 @@
 @import "../../../assets/style/variables";
 @import "../../../assets/style/mixing/mixings";
 
-:host{
-  display: flex;
-  height: 100%;
-  overflow: hidden;
-}
-
 section{
   flex: 1;
   height: 100%;
