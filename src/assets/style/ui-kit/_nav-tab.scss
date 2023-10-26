@@ -12,6 +12,10 @@
     $nav-tab-padding-x: $spacer * 1.125;
     padding:  $nav-tab-padding-y $nav-tab-padding-x;
   }
+  @media screen and (max-width: 999px) {
+    $nav-tab-padding-x: $spacer * 1.5;
+    padding:  $nav-tab-padding-y $nav-tab-padding-x;
+  }
   &:after{
     position: absolute;
     height: $nav-tab-hover-active-border-height;

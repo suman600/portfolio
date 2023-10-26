@@ -23,7 +23,7 @@
     grid-template-columns: 1fr;
     app-highlights {
       margin-left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(calc(-50% - 40px));
     }
   }
 }

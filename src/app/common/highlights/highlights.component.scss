@@ -24,6 +24,10 @@
   top: -292px;
   right: -110px;
   z-index: $zindex-negative;
+  @media screen and (max-width: 1199px) {
+    top: -215px;
+    right: -140px;
+  }
 }
 
 .gradient-indigo{
@@ -35,7 +39,14 @@
   left: 120px;
   background-size: contain;
   transform: rotate(-10deg);
-  z-index: $zindex-negative
+  z-index: $zindex-negative;
+  @media screen and (max-width: 1199px) {
+    width: 468px;
+    height: 481px;
+    top: 140px;
+    left: 180px;
+    opacity: .75;
+  }
 }
 
 .highlights-play{
