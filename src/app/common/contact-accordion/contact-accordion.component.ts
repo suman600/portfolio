@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-accordion.component.scss']
 })
 export class ContactAccordionComponent implements OnInit {
-  accordions:string[] = ['contact',];
+  accordions:string[] = ['contact', 'find-me-also-in'];
   activeIndex:number = 0;
 
   constructor() { }
@@ -14,4 +14,7 @@ export class ContactAccordionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  accordionToggle(index:number){
+    this.activeIndex = index;
+  }
 }

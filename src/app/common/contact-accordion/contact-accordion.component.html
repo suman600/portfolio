@@ -1,11 +1,15 @@
 <div class="accordion-group">
   <div class="accordion" *ngFor="let item of accordions; index as index">
     <div class="accordion__header"
-         [ngClass]="{'show': activeIndex == index}">
+         [ngClass]="{'show': activeIndex == index}"
+         (click)="accordionToggle(index)">
       <div class="accordion__title">{{item}}</div>
     </div>
     <ng-container *ngIf="item == 'contact'">
       <app-phone-email class="accordion__content"></app-phone-email>
+    </ng-container>
+    <ng-container *ngIf="item == 'find-me-also-in'">
+      <app-find-me-also class="accordion__content"></app-find-me-also>
     </ng-container>
   </div>
 </div>

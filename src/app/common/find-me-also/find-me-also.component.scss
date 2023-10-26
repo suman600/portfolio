@@ -1,0 +1,15 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+.item-list{
+  @include flex-align();
+  gap: $item-list-flex-gap;
+  color: $item-list-color;
+  font-size: $item-list-size;
+  font-weight: $item-list-weight;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover, &:active, &.active{
+    color: $item-list-color-active;
+  }
+}
