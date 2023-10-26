@@ -26,4 +26,10 @@
       transform: translateX(calc(-50% - 40px));
     }
   }
+  @media screen and (max-width: 767px) {
+    padding: 100px 2rem 100px;
+    app-highlights{
+      display: none;
+    }
+  }
 }

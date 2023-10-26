@@ -19,6 +19,9 @@ form{
   @media screen and (max-width: 899px) {
     padding: 60px 40px 0;
   }
+  @media screen and (max-width: 767px) {
+    padding: $spacer * 2 $spacer * 1.75;
+  }
 }
 .btn{
   width: max-content;

@@ -1,11 +1,16 @@
 @import "../variables";
 .sidebar{
   display: block;
-  width: $sidebar-width;
+  width: 100%;
   border-right: 1px solid $gray-two;
-  height: 100%;
-  @media screen and (max-width: 1599px) {
+  height: max-content;
+  @media screen and (min-width: 768px) {
     width: $sidebar-md-width;
     min-width: $sidebar-md-width;
+    height: 100%;
+  }
+  @media screen and (min-width: 1600px) {
+    width: $sidebar-width;
+    min-width: $sidebar-width;
   }
 }

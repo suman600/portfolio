@@ -9,6 +9,9 @@ section{
   @media screen and (max-width: 899px) {
     padding: $spacer * 2 $spacer * 2;
   }
+  @media screen and (max-width: 767px) {
+    padding: $spacer * 2 $spacer * 1.75;
+  }
 }
 
 app-about-me,

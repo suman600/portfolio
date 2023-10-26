@@ -1,7 +1,6 @@
 @import "../variables";
 @import "../mixing/mixings";
 
-
 .accordion{
   font-size: $dropdown-font-size;
   font-weight: $dropdown-font-weight;
@@ -49,5 +48,21 @@
   }
   + .accordion__content{
     display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
+  .accordion{
+    border-bottom: 0;
+    margin-bottom: 4px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+   &__header{
+     background: #1E2D3D;
+     padding: calc($dropdown-xy-padding - .25rem) $dropdown-lr-padding;
+   }
+    &__content{
+      padding-top: calc($dropdown-content-top-padding - ($spacer * .5));
+    }
   }
 }

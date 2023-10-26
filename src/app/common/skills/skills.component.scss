@@ -27,4 +27,13 @@ section{
     color: $skill-badge-hover-color;
     background: $skill-badge-hover-bg-color;
   }
+
+}
+@media screen and (max-width: 767px) {
+  section{
+    row-gap: $spacer;
+  }
+  .skill-badge{
+    padding: calc($skill-badge-y-padding - .1rem) calc($skill-badge-x-padding - .5rem);
+  }
 }

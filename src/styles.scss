@@ -20,6 +20,9 @@ app-hello, app-contact, app-project,app-about{
   height: 100%;
   max-height: calc(100vh - 142px);
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 app-hello{
   overflow: visible;

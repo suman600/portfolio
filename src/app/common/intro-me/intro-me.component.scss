@@ -1,4 +1,5 @@
 @import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
 
 :host {
   width: max-content;
@@ -22,4 +23,30 @@
 }
 .text-comment{
   margin-bottom: $spacer*.625;
+}
+@media screen and (max-width: 767px) {
+  :host{
+    width: 100%;
+    height: 100%;
+    @include flex-column();
+  }
+  .intro-caption{
+    margin-bottom: 10px;
+  }
+  .intro-title{
+    line-height: 100%;
+    margin-bottom: 10px;
+  }
+  .intro-code{
+    font-size: calc($intro-font-code-size - .75rem);
+    color: #43D9AD;
+    margin-bottom: 0;
+  }
+  .text-comment{
+    margin-top: auto;
+  }
+  h6{
+    word-break: break-word;
+    line-height: 160%;
+  }
 }

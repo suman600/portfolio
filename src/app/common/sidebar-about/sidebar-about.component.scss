@@ -4,3 +4,14 @@
 :host {
   overflow: auto;
 }
+.nav-tab{
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .nav-tab{
+    display: block;
+    &:after{
+      content: none;
+    }
+  }
+}
