@@ -8,5 +8,6 @@
   &:last-child{
     margin-left: auto;
     border-left: 1px solid $nav-tab-border-color;
+    border-right: 0;
   }
 }

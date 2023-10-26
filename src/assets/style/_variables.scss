@@ -228,6 +228,11 @@ $dropdown-xy-padding: $spacer * .625 !default;
 $dropdown-lr-padding: $spacer * 1.375 !default;
 $dropdown-link-left-padding: $spacer * 1.25 !default;
 $dropdown-border-color: $gray-two !default;
+$dropdown-content-top-padding: $spacer * 1.5 !default;
+$dropdown-content-bottom-padding: $spacer !default;
+$dropdown-content-lr-padding: $spacer * 1.375 !default;
+$dropdown-list-gap: $spacer !default;
+
 
 
 
@@ -242,11 +247,11 @@ $filter-tab-border-color: $gray-two !default;
 
 //  contact list
 
-$contact-list-size: $font-size-base !default;
-$contact-list-weight: $font-weight-base !default;;
-$contact-list-color: $secondary !default;
-$contact-list-color-active: $white !default;
-$contact-list-flex-gap: $spacer * .5 !default;
+$item-list-size: $font-size-base !default;
+$item-list-weight: $font-weight-base !default;;
+$item-list-color: $secondary !default;
+$item-list-color-active: $white !default;
+$item-list-flex-gap: $spacer * .5 !default;
 
 // form-label
 $form-label-size: $font-size-base !default;

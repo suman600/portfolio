@@ -1,0 +1,53 @@
+@import "../variables";
+@import "../mixing/mixings";
+
+
+.accordion{
+  font-size: $dropdown-font-size;
+  font-weight: $dropdown-font-weight;
+  border-bottom: 1px solid $dropdown-border-color;
+  cursor: pointer;
+  &:last-child{
+    border-bottom: 0;
+  }
+  &__header{
+    color: $dropdown-color;
+    padding: $dropdown-xy-padding $dropdown-lr-padding;
+    border-bottom: 1px solid $dropdown-border-color;
+  }
+  &__title{
+    position: relative;
+    padding-left: $dropdown-link-left-padding;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      background: url("../../../assets/img/arrow-down.svg") no-repeat;
+      top: 50%;
+      transform: translateY(-50%) rotate(-90deg);
+      width: 8px;
+      height: 6px;
+      transition: all .2s;
+    }
+    &.closed:before{
+      transform: translateY(-50%) rotate(-90deg);
+    }
+  }
+  &__content{
+    @include flex-column();
+    row-gap: $dropdown-list-gap;
+    padding: $dropdown-content-top-padding $dropdown-content-lr-padding $dropdown-content-bottom-padding;
+    display: none;
+  }
+}
+.show {
+  .accordion__title{
+    &:before{
+      transition: all .2s;
+      transform: translateY(-50%) rotate(0deg);
+    }
+  }
+  + .accordion__content{
+    display: flex;
+  }
+}

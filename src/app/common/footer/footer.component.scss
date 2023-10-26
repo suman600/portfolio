@@ -2,6 +2,7 @@
 @import "../../../assets/style/mixing/mixings";
 
 :host{
+  position: relative;
   @include nav-group();
   border-top: 1px solid $gray-two;
 }

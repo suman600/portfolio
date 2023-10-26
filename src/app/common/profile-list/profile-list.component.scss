@@ -1,28 +1,15 @@
 @import "../../../assets/style/variables";
 @import "../../../assets/style/mixing/mixings";
 
-.folder-group{
-  @include flex-column();
-  gap: $spacer * .625;
-  padding: $spacer $spacer * 1.375;
-  min-height: 95px;
-  border-bottom: 1px solid $gray-two;
-  &:last-child{
-    border-bottom: 0;
-  }
-  &--about{
-    gap: $spacer;
-  }
-}
-.about-list{
+.item-list{
   @include flex-align();
-  gap: $contact-list-flex-gap;
-  color: $contact-list-color;
-  font-size: $contact-list-size;
-  font-weight: $contact-list-weight;
+  gap: $item-list-flex-gap;
+  color: $item-list-color;
+  font-size: $item-list-size;
+  font-weight: $item-list-weight;
   cursor: pointer;
   text-decoration: none;
   &:hover, &:active, &.active{
-    color: $contact-list-color-active;
+    color: $item-list-color-active;
   }
 }

@@ -2,6 +2,7 @@
 @import "../../../assets/style/mixing/mixings";
 
 :host {
+  position: relative;
   border-bottom: 1px solid $gray-two;
   @include nav-group();
 }
@@ -9,15 +10,42 @@ app-nav-tabs{
   flex: 1;
   @include nav-group();
 }
-
 .nav-tab{
-  width: $sidebar-width;
+  width: 100%;
+  border-right: 1px solid $gray-two;
   pointer-events: none;
-  @media screen and (max-width: 1599px) {
+  @media screen and (min-width: 767px) {
     width: $sidebar-md-width;
+  }
+  @media screen and (min-width: 1600px) {
+    width: $sidebar-width;
   }
   &:after{
     content: none;
   }
-  border-right: 1px solid $gray-two;
+}
+
+.hamburger{
+  position: relative;
+  width: 18px;
+  height: 16px;
+  border-radius: 0;
+  padding: 0;
+  background: url("../../../assets/img/hamburger.svg") no-repeat center center;
+  background-size: contain;
+}
+@media screen and (max-width: 767px) {
+  :host{
+    flex-direction: column;
+  }
+  app-nav-tabs{
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-tab{
+    @include flex-align();
+    justify-content: space-between;
+    border-bottom: 1px solid $gray-two;
+    border-right: 0;
+  }
 }

@@ -8,3 +8,8 @@
   z-index: 99;
   transition: transform 0.2s, opacity 0.2s;
 }
+@media screen and (max-width: 767px) {
+  #customCursor{
+    display: none;
+  }
+}

@@ -1,16 +1,18 @@
 @import "../../../assets/style/variables";
 @import "../../../assets/style/mixing/mixings";
 
-
-.filter-group{
-  padding: $spacer * 1.125 $spacer * 1.375;
-  @include flex-column();
-  gap: $spacer * 1.125;
-  &__list{
-    @include flex-align();
-    gap: $spacer * 1.5;
-    &:has(input:checked){
-      color: $white;
-    }
+.item-list{
+  @include flex-align();
+  gap: $item-list-flex-gap * 3;
+  color: $item-list-color;
+  font-size: $item-list-size;
+  font-weight: $item-list-weight;
+  cursor: pointer;
+  text-decoration: none;
+  &:has(input:checked){
+    color: $white;
+  }
+  &:hover, &:active, &.active{
+    color: $item-list-color-active;
   }
 }

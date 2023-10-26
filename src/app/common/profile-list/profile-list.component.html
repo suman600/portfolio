@@ -1,8 +1,6 @@
-<div class="folder-group folder-group--about">
-  <div class="about-list"
-       [ngClass]="{'active': index == selectedIndex}"
-       *ngFor="let list of lists; index as index"
-       (click)="aboutSwitch(list.type,index )">
-    <img [src]="list.image" [alt]="list.text">{{list.text}}
-  </div>
+<div class="item-list"
+     [ngClass]="{'active': index == selectedIndex}"
+     *ngFor="let list of lists; index as index"
+     (click)="aboutSwitch(list.type,index )">
+  <img [src]="list.image" [alt]="list.text">{{list.text}}
 </div>

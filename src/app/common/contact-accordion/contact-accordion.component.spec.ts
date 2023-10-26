@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProfileCheckoutComponent } from './profile-checkout.component';
+import { ContactAccordionComponent } from './contact-accordion.component';
 
-describe('ProfileCheckoutComponent', () => {
-  let component: ProfileCheckoutComponent;
-  let fixture: ComponentFixture<ProfileCheckoutComponent>;
+describe('ContactAccordionComponent', () => {
+  let component: ContactAccordionComponent;
+  let fixture: ComponentFixture<ContactAccordionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProfileCheckoutComponent ]
+      declarations: [ ContactAccordionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProfileCheckoutComponent);
+    fixture = TestBed.createComponent(ContactAccordionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
