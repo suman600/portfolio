@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AccordionGroupComponent } from './accordion-group.component';
+import { AboutAccordionComponent } from './about-accordion.component';
 
 describe('AccordionGroupComponent', () => {
-  let component: AccordionGroupComponent;
-  let fixture: ComponentFixture<AccordionGroupComponent>;
+  let component: AboutAccordionComponent;
+  let fixture: ComponentFixture<AboutAccordionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AccordionGroupComponent ]
+      declarations: [ AboutAccordionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AccordionGroupComponent);
+    fixture = TestBed.createComponent(AboutAccordionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

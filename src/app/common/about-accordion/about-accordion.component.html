@@ -4,10 +4,10 @@
        (click)="accordionToggle(index)">
     <div class="accordion__title">{{item}}</div>
   </div>
-  <ng-container *ngIf="item == 'personal-info'">
+  <div class="accordion__body" *ngIf="item == 'personal-info'">
     <app-profile-list class="accordion__content"></app-profile-list>
-  </ng-container>
-  <ng-container *ngIf="item == 'contacts'">
+  </div>
+  <div class="accordion__body" *ngIf="item == 'contacts'">
     <app-phone-email class="accordion__content"></app-phone-email>
-  </ng-container>
+  </div>
 </div>

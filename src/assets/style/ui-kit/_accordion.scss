@@ -32,11 +32,15 @@
       transform: translateY(-50%) rotate(-90deg);
     }
   }
+  &__body{
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s;
+  }
   &__content{
     @include flex-column();
     row-gap: $dropdown-list-gap;
     padding: $dropdown-content-top-padding $dropdown-content-lr-padding $dropdown-content-bottom-padding;
-    display: none;
   }
 }
 .show {
@@ -46,8 +50,9 @@
       transform: translateY(-50%) rotate(0deg);
     }
   }
-  + .accordion__content{
-    display: flex;
+  + .accordion__body{
+    max-height: 200px;
+    transition: all .3s;
   }
 }
 @media screen and (max-width: 767px) {

@@ -24,6 +24,28 @@
 .text-comment{
   margin-bottom: $spacer*.625;
 }
+
+.typing-effect {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    &:after{
+      content: "Micheal Weaver";
+      position: absolute;
+      top: 0;
+      color: rgba($white, 6%);
+      font-size: $intro-font-title-size;
+      font-weight: $font-weight-normal;
+      white-space: nowrap;
+    }
+    .intro-title{
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid $white;
+      animation: typing 2.5s steps(14), blink .5s step-end infinite alternate;
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   :host{
     width: 100%;
@@ -48,5 +70,19 @@
   h6{
     word-break: break-word;
     line-height: 160%;
+  }
+}
+
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
 }
