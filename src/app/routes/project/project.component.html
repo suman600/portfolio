@@ -1,6 +1,10 @@
 <!--<app-file-tab></app-file-tab>-->
 <app-sidebar-filter class="sidebar"></app-sidebar-filter>
+
 <section *ngIf="cards.length">
+  <div class="desktop-hidden">
+    <span class="text-assign">// projects</span> / all
+  </div>
   <app-card *ngFor="let card of cards" [card]="card"></app-card>
 </section>
 <div class="empty-state" *ngIf="!cards.length">

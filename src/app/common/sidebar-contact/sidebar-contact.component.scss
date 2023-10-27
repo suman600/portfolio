@@ -8,3 +8,8 @@ app-phone-email{
   display: block;
   border-bottom: 1px solid $gray-two;
 }
+.nav-tab{
+  &:after{
+    content: none;
+  }
+}
