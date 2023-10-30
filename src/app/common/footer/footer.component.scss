@@ -25,4 +25,9 @@ app-nav-link{
     background: #011627;
   }
 }
+@media screen and (max-width: 399px) {
+  .nav-links{
+    display: none;
+  }
+}
 

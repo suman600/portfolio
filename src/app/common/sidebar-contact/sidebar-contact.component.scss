@@ -9,6 +9,7 @@ app-phone-email{
   border-bottom: 1px solid $gray-two;
 }
 .nav-tab{
+  border-right: 0;
   &:after{
     content: none;
   }

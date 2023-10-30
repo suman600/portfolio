@@ -1,8 +1,12 @@
 :host {
   overflow: auto;
 }
-.nav-tab{
-  &:after{
-    content: none;
+@media screen and (max-width: 767px){
+  .nav-tab{
+    border-right: 0;
+    &:after{
+      content: none;
+    }
   }
 }
+

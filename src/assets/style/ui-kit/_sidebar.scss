@@ -13,4 +13,7 @@
     width: $sidebar-width;
     min-width: $sidebar-width;
   }
+  @media screen and (max-width: 767px) {
+    border-right: 0;
+  }
 }

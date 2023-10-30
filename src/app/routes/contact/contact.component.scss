@@ -20,6 +20,9 @@ app-code-snipped{
   height: 100%;
 }
 @media screen and (max-width: 767px) {
+  app-form-contact{
+    border-right: 0;
+  }
   app-code-snipped{
     display: none;
   }

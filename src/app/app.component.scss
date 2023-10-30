@@ -1,0 +1,6 @@
+::ng-deep app-hello{
+  @media screen and (max-width: 767px) {
+    background: url(../assets/img/gradient-mweb.svg) no-repeat -10px -50px;
+    background-size: calc(100% + 10px) calc(100% + 50px);;
+  }
+}

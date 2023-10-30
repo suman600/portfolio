@@ -38,6 +38,8 @@ section{
 .empty-state{
   @include flex-align();
   justify-content: center;
+  flex: 1;
+  width: 100%;
   img{
     width: 40%;
     height: auto;
@@ -47,6 +49,11 @@ section{
   @media screen and (max-width: 999px) {
     img{
       width: 60%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    img{
+      width: 70%;
     }
   }
 }
