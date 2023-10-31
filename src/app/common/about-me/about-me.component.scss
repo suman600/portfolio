@@ -1,4 +1,38 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+@media screen and (max-width: 767px) {
+:host{
+    height: max-content !important;
+  }
+}
 pre{
   line-height: 1.5;
+  margin: 0;
+  overflow: hidden;
+}
+
+.about-container{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: $spacer * 2;
+  max-width: 800px;
+}
+ul{
+  flex: 1;
+  line-height: 1.5;
+  padding-left: 0;
   margin-bottom: 0;
+  list-style: none;
+}
+li{
+  display: flex;
+  gap: $spacer * .65;
+}
+
+@media screen and (max-width: 767px) {
+  li span{
+    display: none;
+  }
 }

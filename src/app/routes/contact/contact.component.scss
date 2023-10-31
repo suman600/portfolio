@@ -8,6 +8,7 @@ section{
   overflow: auto;
   @media screen and (max-width: 1099px) {
     grid-template-columns: 1fr;
+    height: max-content;
   }
 }
 app-form-contact{

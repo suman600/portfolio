@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: $spacer * 3;
-  width: max-content;
+  max-width: 800px;
 }
 .card{
   border: 1px solid $gray-two;
