@@ -61,15 +61,17 @@
   }
   .intro-code{
     font-size: calc($intro-font-code-size - .75rem);
-    color: #43D9AD;
+    color: $cyan;
     margin-bottom: 0;
   }
   .text-comment{
     margin-top: auto;
   }
   h6{
+    position: relative;
     word-break: break-word;
     line-height: 160%;
+    z-index: $zindex-upper;
   }
 }
 
