@@ -1,19 +1,11 @@
-import {
-  AfterContentInit,
-  AfterViewChecked,
-  AfterViewInit,
-  Component,
-  ElementRef,
-  OnInit,
-  ViewChild
-} from '@angular/core';
+import {AfterViewChecked, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss']
 })
-export class AboutMeComponent implements OnInit, AfterViewInit {
+export class AboutMeComponent implements OnInit, AfterViewChecked{
 
   @ViewChild('element') element: ElementRef;
   height:string;
@@ -22,9 +14,9 @@ export class AboutMeComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
   }
 
-  ngAfterViewInit(){
-    let eleHeight = this.element.nativeElement.offsetHeight;
-    this.height = eleHeight;
-    console.log(eleHeight)
+  ngAfterViewChecked(){
+    setTimeout(()=>{
+      this.height = this.element.nativeElement.offsetHeight;
+    },1000)
   }
 }
