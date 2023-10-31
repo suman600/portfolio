@@ -12,20 +12,20 @@ export const authFilter:Filter = {
   name: 'filterProject',
   text: 'Auth',
   value: 'googleAuth',
-  checked: false,
+  checked: true,
   obj: auth,
 };
 export const sheetFilter:Filter = {
   name: 'filterProject',
   text: 'sheet',
   value: 'spreadSheet',
-  checked: false,
+  checked: true,
   obj: sheet,
 };
 export const themeFilter:Filter = {
   name: 'filterProject',
   text: 'Theme',
   value: 'vsTheme',
-  checked: false,
+  checked: true,
   obj: theme,
 };

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {WorkExp} from "../../model/model";
 import {
+  dataEntryOperator,
   SeniorSoftwareEngineer,
   softwareDeveloper,
   softwareEngineer,
@@ -17,7 +18,8 @@ export class WorkExpComponent implements OnInit {
     SeniorSoftwareEngineer,
     softwareEngineer,
     softwareDeveloper,
-    uiDeveloper]
+    uiDeveloper,
+    dataEntryOperator]
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,26 @@
+@import "../../../assets/style/variables";
+@import "../../../assets/style/mixing/mixings";
+
+.skill-badge{
+  @include flex-align();
+  justify-content: center;
+  gap: $skill-badge-x-gap;
+  color: $skill-badge-color;
+  font-size: $skill-badge-font-size;
+  font-weight: $skill-badge-weight;
+  padding: $skill-badge-y-padding $skill-badge-x-padding;
+  border: 1px solid $skill-badge-border-color;
+  border-radius: $skill-badge-border-radius;
+  min-width: 120px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover{
+    border-color: $skill-badge-hover-border-color;
+    color: $skill-badge-hover-color;
+    background: $skill-badge-hover-bg-color;
+    transform: scale(1.05);
+    transition: all .3s;
+  }
+
+}

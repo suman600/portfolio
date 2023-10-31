@@ -1,6 +1,9 @@
 @import "../../../assets/style/variables";
 @import "../../../assets/style/mixing/mixings";
 
+canvas{
+  outline: 0 !important;
+}
 :host{
   position: relative;
   display: grid;

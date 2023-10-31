@@ -1,9 +1,9 @@
-<a class="card" [href]="card.link" target="_blank">
+<a class="card" [href]="card.link" target="_blank" tabindex="-1">
   <div class="card__header">
     <img class="thumbnail" [src]="card.image" alt="image" >
   </div>
   <div class="card__content">
     <p>{{card.text}}</p>
-    <a class="btn btn-dark" [href]="card.view" target="_blank">view-project</a>
+    <a class="btn btn-dark" [href]="card.view" target="_blank" tabindex="-1">view-project</a>
   </div>
 </a>

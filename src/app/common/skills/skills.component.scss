@@ -9,26 +9,6 @@ section{
   margin-bottom: $spacer * 3;
 }
 
-.skill-badge{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: $skill-badge-color;
-  font-size: $skill-badge-font-size;
-  font-weight: $skill-badge-weight;
-  padding: $skill-badge-y-padding $skill-badge-x-padding;
-  border: 1px solid $skill-badge-border-color;
-  border-radius: $skill-badge-border-radius;
-  min-width: 120px;
-  text-align: center;
-  cursor: pointer;
-  &:hover{
-    border-color: $skill-badge-hover-border-color;
-    color: $skill-badge-hover-color;
-    background: $skill-badge-hover-bg-color;
-  }
-
-}
 @media screen and (max-width: 767px) {
   section{
     row-gap: $spacer;

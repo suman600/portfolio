@@ -265,6 +265,7 @@ $skill-badge-font-size: $font-size-base !default;
 $skill-badge-weight: $font-weight-base !default;
 $skill-badge-y-padding: $spacer * .85 !default;
 $skill-badge-x-padding: $spacer * 2 !default;
+$skill-badge-x-gap: $spacer * .5 !default;
 $skill-badge-border-color: $gray-two !default;
 $skill-badge-border-radius: $spacer *2 !default;
 $skill-badge-hover-color: $white !default;
@@ -277,6 +278,8 @@ $commit-border-color: $gray-two !default;
 $commit-border-radius: $border-radius !default;
 $commit-y-padding: $spacer * .625 !default;
 $commit-x-padding: $spacer !default;
+$commit-margin-bottom: $spacer * 2 !default;
+$commit-margin-skill-gap: $spacer * .5 !default;
 
 
 

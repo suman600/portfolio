@@ -134,7 +134,7 @@ small {
 a {
   color: $primary;
   text-decoration: none;
-
+  outline: 0 !important;
   &:hover {
     text-decoration: none;
   }

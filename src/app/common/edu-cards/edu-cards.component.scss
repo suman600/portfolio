@@ -2,14 +2,9 @@
 @import "../../../assets/style/mixing/mixings";
 :host{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: $spacer * 2;
-  @media screen and (max-width: 1599px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media screen and (max-width: 1199px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: $spacer * 3;
+  width: max-content;
 }
 .card{
   border: 1px solid $gray-two;

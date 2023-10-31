@@ -14,8 +14,8 @@ import {
   jquery,
   less,
   reactjs,
-  scss,
-  typescript,
+  scss, tailwind,
+  typescript, wordpress,
   zeplin
 } from '../../links/skill'
 import {Skill} from "../../model/model";
@@ -28,13 +28,14 @@ export class SkillsComponent implements OnInit {
 
   skills:Skill[] = [
     javascript,
-    html,
-    css,
     angular,
     angularjs,
     reactjs,
     jquery,
     typescript,
+    html,
+    css,
+    tailwind,
     scss,
     less,
     bootstrap,
@@ -46,6 +47,7 @@ export class SkillsComponent implements OnInit {
     bitbucket,
     figma,
     zeplin,
+    wordpress
   ];
   constructor() {
 

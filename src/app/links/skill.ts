@@ -44,6 +44,10 @@ export const bootstrap:Skill = {
   text: 'Bootstrap',
   image: './assets/img/bootstrap.svg',
 };
+export const tailwind:Skill = {
+  text: 'Tailwind',
+  image: './assets/img/tailwind.svg',
+};
 export const jira:Skill = {
   text: 'Jira',
   image: './assets/img/jira.svg',
@@ -67,6 +71,10 @@ export const figma:Skill = {
 export const zeplin:Skill = {
   text: 'Zeplin',
   image: './assets/img/zeplin.svg',
+};
+export const wordpress:Skill = {
+  text: 'Wordpress',
+  image: './assets/img/wordpress.svg',
 };
 
 

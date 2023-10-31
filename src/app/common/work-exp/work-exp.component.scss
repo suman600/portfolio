@@ -37,6 +37,7 @@
   border: 1px solid $commit-border-color;
   border-radius: $commit-border-radius;
   width: 100%;
+  margin-bottom: $commit-margin-bottom;
   padding: 0;
   overflow: hidden;
   &__item{
@@ -46,8 +47,18 @@
     &:last-child{
       border-bottom: 0;
     }
+    &--skills{
+      @include flex-align();
+      gap: $commit-margin-skill-gap;
+      flex-wrap: wrap;
+    }
   }
   p{
     font-weight: $font-weight-thin-bold;
   }
+}
+
+.skill-badge{
+  padding: $spacer * .25 $spacer * .5;
+  border-radius: $spacer * 0.5;
 }

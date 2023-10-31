@@ -12,6 +12,13 @@
       <li class="commit-box__item" *ngFor="let text of work.work">
         {{text}}
       </li>
+      <li class="commit-box__item commit-box__item--skills">
+        <ng-container *ngFor="let skill of work.skills">
+          <span class="skill-badge">
+            {{skill}}
+          </span>
+        </ng-container>
+      </li>
     </ul>
   </div>
 </div>
