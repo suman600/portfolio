@@ -13,6 +13,9 @@
   height: 200px;
   font-size: $spacer;
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
   &__header{
     padding: $spacer * .25 $spacer * .75;
     background: transparent;
