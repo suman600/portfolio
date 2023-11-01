@@ -1,5 +1,5 @@
 import {Filter} from '../model/model';
-import {todo, auth, sheet, theme} from './cards'
+import {todo, auth, sheet, theme, react} from './cards'
 
 export const todoFilter:Filter = {
   name: 'filterProject',
@@ -28,4 +28,11 @@ export const themeFilter:Filter = {
   value: 'vsTheme',
   checked: true,
   obj: theme,
+};
+export const themeReact:Filter = {
+  name: 'filterProject',
+  text: 'Theme',
+  value: 'vsTheme',
+  checked: true,
+  obj: react,
 };
