@@ -17,6 +17,6 @@ export class AboutMeComponent implements OnInit, AfterViewChecked{
   ngAfterViewChecked(){
     setTimeout(()=>{
       this.height = this.element.nativeElement.offsetHeight;
-    },1000)
+    },100)
   }
 }

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Filter} from "../../model/model";
-import {authFilter, sheetFilter, themeFilter, themeReact, todoFilter} from "../../links/filter";
+import {authFilter, sheetFilter, themeFilter, todoFilter, reactFilter} from "../../links/filter";
 import {AppService} from "../../service/app.service";
-import {auth, sheet, theme, todo} from "../../links/cards";
+import {auth, react, sheet, theme, todo} from "../../links/cards";
 import {NavigationEnd, Router} from "@angular/router";
 
 @Component({
@@ -11,8 +11,8 @@ import {NavigationEnd, Router} from "@angular/router";
   styleUrls: ['./filter-group.component.scss']
 })
 export class FilterGroupComponent implements OnInit {
-  filters:Filter[] = [{...todoFilter}, {...authFilter}, {...sheetFilter}, {...themeFilter}, {...themeReact}];
-  filteredArr:any = [todo, auth, sheet, theme];
+  filters:Filter[] = [{...todoFilter}, {...authFilter}, {...sheetFilter}, {...themeFilter}, {...reactFilter}];
+  filteredArr:any = [todo, auth, sheet, theme, react];
 
   constructor(
     private service: AppService,

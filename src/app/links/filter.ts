@@ -3,35 +3,35 @@ import {todo, auth, sheet, theme, react} from './cards'
 
 export const todoFilter:Filter = {
   name: 'filterProject',
-  text: 'Todo',
+  text: 'Crud App',
   value: 'todoApp',
   checked: true,
   obj: todo,
 };
 export const authFilter:Filter = {
   name: 'filterProject',
-  text: 'Auth',
+  text: 'Google Auth',
   value: 'googleAuth',
   checked: true,
   obj: auth,
 };
 export const sheetFilter:Filter = {
   name: 'filterProject',
-  text: 'sheet',
+  text: 'Sheet Driven',
   value: 'spreadSheet',
   checked: true,
   obj: sheet,
 };
 export const themeFilter:Filter = {
   name: 'filterProject',
-  text: 'Theme',
+  text: 'VS Color Theme',
   value: 'vsTheme',
   checked: true,
   obj: theme,
 };
-export const themeReact:Filter = {
+export const reactFilter:Filter = {
   name: 'filterProject',
-  text: 'Theme',
+  text: 'React UI Theme',
   value: 'vsTheme',
   checked: true,
   obj: react,
