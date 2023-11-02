@@ -4,7 +4,7 @@ export const todo:Card = {
   image: './assets/img/card-1.webp',
   title: 'Todo App',
   text: 'This is an Angular CRUD app, along with angular service, firebase store and RxJS features.',
-  link: 'https://www.google.com/',
+  link: 'https://ngtodo.vercel.app',
   view: 'https://github.com/suman600/ngtodo'
 };
 export const auth:Card = {
