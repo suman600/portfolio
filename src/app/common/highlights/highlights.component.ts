@@ -47,7 +47,7 @@ export class HighlightsComponent implements OnInit {
     this.food = this.generateFood();
     this.loadFoodImage();
     this.isGameStarted = true;
-    const moveDelay = 200;
+    const moveDelay = 250;
     const gameInterval = setInterval(() => {
       if (this.isGameOver || this.isGameCompleted) {
         clearInterval(gameInterval);

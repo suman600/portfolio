@@ -29,7 +29,7 @@
   position: relative;
   @media screen and (min-width: 768px) {
     &:after{
-      content: "Micheal Weaver";
+      content: "Suman Raj Gupta";
       position: absolute;
       top: 0;
       color: rgba($white, 6%);
@@ -42,7 +42,7 @@
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid $white;
-      animation: typing 2.5s steps(14), blink .5s step-end infinite alternate;
+      animation: typing 2.5s steps(15), blink .5s step-end infinite alternate;
     }
   }
 }
