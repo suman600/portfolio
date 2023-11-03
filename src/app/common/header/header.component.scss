@@ -5,7 +5,7 @@
   position: relative;
   border-bottom: 1px solid $gray-two;
   @include nav-group();
-  z-index: $zindex-normal;
+  z-index: $zindex-upper;
 }
 app-nav-tabs{
   flex: 1;

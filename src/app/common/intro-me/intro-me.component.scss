@@ -24,10 +24,15 @@
 .text-comment{
   margin-bottom: $spacer*.625;
 }
-
-.typing-effect {
+.typing-effect{
   position: relative;
-  @media screen and (min-width: 768px) {
+}
+h6{
+  position: relative;
+  z-index: $zindex-normal;
+}
+@media screen and (min-width: 768px) {
+  .typing-effect {
     &:after{
       content: "Suman Raj Gupta";
       position: absolute;
@@ -68,10 +73,9 @@
     margin-top: auto;
   }
   h6{
-    position: relative;
     word-break: break-word;
     line-height: 160%;
-    z-index: $zindex-upper;
+    z-index: 1;
   }
 }
 
